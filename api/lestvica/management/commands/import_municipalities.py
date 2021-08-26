@@ -1,6 +1,3 @@
-# TODO
-- vključenost pusti kot podnaslov, pobriši druge tri, tudi obveščanje je podnaslov, ne glavni naslov
-
 import csv
 
 from django.core.management.base import BaseCommand, CommandError

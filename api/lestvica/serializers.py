@@ -7,8 +7,9 @@ class MunicipalitySerializer(serializers.ModelSerializer):
     class Meta:
         model = Municipality
         fields = [
-            'name',
             'id',
+            'name',
+            'email',
             'budget',
             'population',
             'total_score',

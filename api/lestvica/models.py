@@ -65,6 +65,7 @@ class Bucket(models.Model):
 
 class Municipality(models.Model):
     name = models.TextField(blank=False, null=False)
+    email = models.EmailField(blank=True, null=True)
     budget = models.FloatField(blank=False, null=False)
     population = models.IntegerField(blank=False, null=False)
 
