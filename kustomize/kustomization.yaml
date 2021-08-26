@@ -8,4 +8,4 @@ resources:
 images:
   - name: lestvica-transparentnosti
     newName: rg.fr-par.scw.cloud/djnd/lestvica-transparentnosti
-    newTag: '80aff4232bf8583cbe5e88b4244f9a43d474a5c7'
+    newTag: '78d7d3abb24c25847e225691df3b9d834864298a'
