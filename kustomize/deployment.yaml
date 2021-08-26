@@ -39,7 +39,7 @@ spec:
           image: lestvica-transparentnosti
           command:
             - gunicorn
-            - lestvica-transparentnosti_project.wsgi:application
+            - api.wsgi:application
             - -b
             - 0.0.0.0:8000
             - --log-level
