@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: lestvica-transparentnosti
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-production"
+spec:
+  tls:
+    - hosts:
+        - lestvica-transparentnosti.lb.djnd.si
+      secretName: lestvica-transparentnosti-tls
+  rules:
+    - host: lestvica-transparentnosti.lb.djnd.si
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: lestvica-transparentnosti
+                port:
+                  number: 8000
