@@ -26,5 +26,7 @@ class SmallMunicipalitySerializer(serializers.ModelSerializer):
         model = Municipality
         fields = [
             'name',
-            'id'
+            'id',
+            'total_score',
+            'total_bucket',
         ]
