@@ -68,6 +68,7 @@ class Municipality(models.Model):
     email = models.EmailField(blank=True, null=True)
     budget = models.FloatField(blank=False, null=False)
     population = models.IntegerField(blank=False, null=False)
+    rank = models.IntegerField(blank=False, null=False, default=0)
 
     @property
     def groups(self):
