@@ -157,9 +157,9 @@ class Municipality(models.Model):
         )
 
         return {
-            'population': [{'name': peer.name, 'id': peer.id, 'total_score': peer.total_score, 'population': peer.population} for peer in population_peers],
-            'budget': [{'name': peer.name, 'id': peer.id, 'total_score': peer.total_score, 'budget': peer.budget} for peer in budget_peers],
-            'score': [{'name': peer.name, 'id': peer.id, 'total_score': peer.total_score} for peer in score_peers]
+            'population': [{'name': peer.name, 'id': peer.id, 'total_score': peer.total_score, 'rank': peer.rank, 'population': peer.population} for peer in population_peers],
+            'budget': [{'name': peer.name, 'id': peer.id, 'total_score': peer.total_score, 'rank': peer.rank, 'budget': peer.budget} for peer in budget_peers],
+            'score': [{'name': peer.name, 'id': peer.id, 'total_score': peer.total_score, 'rank': peer.rank} for peer in score_peers]
         }
 
     @property
