@@ -63,7 +63,8 @@ export default {
   }
 
   p,
-  ul li {
+  ul li,
+  table {
     font-size: 22px;
     font-weight: 500;
     line-height: 1.6;
@@ -93,6 +94,26 @@ export default {
     height: 0;
     border: none;
     border-top: 1px solid var(--heading-color);
+  }
+
+  table {
+    table-layout: fixed;
+    border: 0;
+    border-collapse: collapse;
+
+    tr {
+      border-bottom: 1px solid var(--heading-color);
+
+      th,
+      td {
+        padding: 1rem 0.5rem;
+      }
+
+      th {
+        font-weight: 900;
+        text-align: left;
+      }
+    }
   }
 
   .boxes {
@@ -158,8 +179,15 @@ export default {
     .example-col {
       .example {
         width: 740px;
-        height: 400px;
+        // height: 400px;
         border: 12px solid var(--accent-color);
+
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+          // object-fit: cover;
+        }
       }
 
       .caption {

@@ -26,20 +26,20 @@
         </h2>
 
         <p>
-          <strong>
+          <span class="highlighted">
             V povprečju so slovenske občine v pričujoči raziskavi odprtosti in
             transparentnosti njihovega delovanja dosegle 34,9 od 100 točk.
-          </strong>
+          </span>
           To pomeni, da je povprečna občina dosegla le tretjino vseh kazalnikov,
           tudi najbolje uvrščena občina pa je dosegla le približno dve tretjini
           točk. Iz tega lahko sklepamo, da imajo prav vse slovenske občine v
           odnosu do občank in občanov še precej možnosti za izboljšanje svojega
           delovanja.
-          <strong>
+          <span class="highlighted">
             Najbolje se je sicer odrezala Mestna občina Ljubljana, ki je dosegla
             67,2 točke, najslabše pa Občina Velika Polana, ki je dosegla zgolj
             13,5 točke.
-          </strong>
+          </span>
         </p>
 
         <p>
@@ -85,11 +85,11 @@
           Pridobljeni podatki so pokazali signifikantno korelacijo med številom
           doseženih točk in populacijo ter tudi med številom doseženih točk in
           višino proračuna. To pomeni, da
-          <strong>
+          <span class="highlighted">
             so občine z večjim številom prebivalcev in višjim proračunom
             praviloma bolj odprte in transparentne ter obratno
-          </strong>
-          – manjše občine so v večini primerov manj transparentne in odprte. Pri
+          </span>
+          - manjše občine so v večini primerov manj transparentne in odprte. Pri
           tem predvidevamo, da je v manjših in bolj ruralnih občinah za razliko
           od urbanih središč spletno mesto manj prepoznan kanal obveščanja,
           nizko število točk pa je lahko tudi posledica nezadostnih kadrovskih
@@ -99,10 +99,10 @@
         <h3>Kako so se občine odrezale po sklopih?</h3>
 
         <p>
-          <strong>
+          <span class="highlighted">
             Pri transparentnem delovanju občinskega sveta so občine v povprečju
             dosegle 5,5 od 20 možnih točk.
-          </strong>
+          </span>
           V tem sklopu so občine točke izgubljale predvsem zaradi
           netransparentnega delovanja delovnih teles, velika večina pa tudi
           zato, ker objav o delovanju občinskega sveta ne opremlja z datumi. Ker
@@ -111,10 +111,10 @@
           dejansko objavljene.
         </p>
         <p>
-          <strong>
+          <span class="highlighted">
             Pri preglednosti spletnega mesta in dostopu do informacij so občine
             v povprečju dosegle 8,4 od 20 možnih točk.
-          </strong>
+          </span>
           V tem sklopu so občine točke izgubljale predvsem zaradi uporabniku
           neprijaznega prikazovanja pomembnih informacij o delovanju občinskega
           sveta ter pomanjkanja informacij o občinskih svetnikih, s čimer
@@ -122,10 +122,10 @@
           predstavnikih ali pa njihovega kontaktiranja.
         </p>
         <p>
-          <strong>
+          <span class="highlighted">
             Pri transparentnosti in vključenosti v postopek sprejemanja
             občinskega proračuna so občine v povprečju dosegle 6,8 od 20 točk.
-          </strong>
+          </span>
           Občine so v tem sklopu točke izgubljale predvsem zaradi uporabniku
           neprijazne in nerazumljive objave proračunov in pomanjkanja
           posvetovanja z občani ob sprejemanju proračunov. Ker gre pri proračunu
@@ -133,20 +133,20 @@
           področju vložiti več naporov v aktivno vključevanje občank in občanov.
         </p>
         <p>
-          <strong>
+          <span class="highlighted">
             Pri dostopnosti občinskega spletnega mesta so občine v povprečju
             dosegle 12,1 od 20 točk.
-          </strong>
+          </span>
           Čeprav gre za najbolje ocenjeni sklop, so tudi na tem področju občine
           izpolnile le nekaj več kot polovico vseh ocenjevanih kazalnikov, kar
           pomeni, da lahko tudi pri omogočanju dostopa do podatkov osebam z
           oviranostmi še izboljšajo svoje delovanje.
         </p>
         <p>
-          <strong>
+          <span class="highlighted">
             Pri vključenosti javnosti v delovanje občine ter ustreznem
             obveščanju so občine v povprečju dosegle le 2,1 od 20 točk.
-          </strong>
+          </span>
           Načinov vključevanja ter obveščanja občank in občanov ni bilo mogoče
           oceniti zgolj s pregledom občinskih spletnih mest, zato smo občinam
           poslali pripravljene vprašalnike. Zelo nizka povprečna ocena na tem
@@ -279,7 +279,9 @@
           </div>
         </div>
         <div class="example-col">
-          <div class="example">Slika: P1_S1</div>
+          <div class="example">
+            <img src="~/assets/images/P1_S1.png" alt="" />
+          </div>
           <div class="caption">
             Gradiva za sejo občinskega sveta, po katerih se ne da iskati z
             bližnjico CTRL&nbsp;+&nbsp;F.
@@ -288,7 +290,9 @@
       </div>
       <div class="described-example">
         <div class="example-col">
-          <div class="example">Slika: P1_S2</div>
+          <div class="example">
+            <img src="~/assets/images/P1_S2.png" alt="" />
+          </div>
           <div class="caption">
             Gradiva za sejo občinskega sveta, objavljena v priponkah, katerih
             imena ne razkrivajo ničesar o njihovi vsebini.
@@ -309,7 +313,9 @@
           </div>
         </div>
         <div class="example-col">
-          <div class="example">Slika: P1_S3</div>
+          <div class="example">
+            <img src="~/assets/images/P1_S3.png" alt="" />
+          </div>
           <div class="caption">
             Seznam sej občinskega sveta, iz katerega ni mogoče razbrati, na
             kateri datum so se odvijale.
@@ -318,7 +324,9 @@
       </div>
       <div class="described-example">
         <div class="example-col">
-          <div class="example">Slika: P1_S4</div>
+          <div class="example">
+            <img src="~/assets/images/P1_S4.png" alt="" />
+          </div>
           <div class="caption">
             Gradiva za sejo občinskega sveta, združena v eno samo mapo, ki jo je
             treba pred pregledom prenesti na računalnik.
@@ -348,10 +356,10 @@
           povsod, kjer to ne predstavlja prevelikega in nesorazmernega napora, z
           objavo na spletu v strojno berljivih formatih podatke odprejo za
           ponovno uporabo (komur koli in za kateri koli namen). Pa kljub temu
-          <strong>
+          <span class="highlighted">
             niti ena sama občina ne objavlja podatkov o glasovanju občinskega
             sveta v strojno berljivih formatih
-          </strong>
+          </span>
           (recimo CSV ali XML).
         </p>
       </div>
@@ -359,14 +367,17 @@
       <div class="described-example">
         <div class="description-col">
           <div class="description">
-            <span class="large">33</span> % občinskih svetov gradiva za seje
-            objavlja kar kot skenirane datoteke PDF, ki jih je skoraj nemogoče
-            strojno prebrati, a še bolj zaskrbljujoče je, da se v takem formatu
-            nahaja tudi <span class="large">7</span> % občinskih proračunov.
+            <span class="large">33</span>&nbsp;% občinskih svetov gradiva za
+            seje objavlja kar kot skenirane datoteke PDF, ki jih je skoraj
+            nemogoče strojno prebrati, a še bolj zaskrbljujoče je, da se v takem
+            formatu nahaja tudi <span class="large">7</span>&nbsp;% občinskih
+            proračunov.
           </div>
         </div>
         <div class="example-col">
-          <div class="example">Slika: P1_S5</div>
+          <div class="example">
+            <img src="~/assets/images/P1_S5.png" alt="" />
+          </div>
           <div class="caption">
             Občinski proračun, objavljen v obliki skenirane datoteke PDF, ki
             onemogoča strojno branje in iskanje z bližnjico CTRL&nbsp;+&nbsp;F.
@@ -377,8 +388,9 @@
       <div class="narrow">
         <p>
           <span class="highlighted">
-            <span class="large">81</span> % občin pa svoje objave o delovanju
-            občinskega sveta le včasih ali pa sploh nikoli ne opremi z datumom.
+            <span class="large">81</span>&nbsp;% občin pa svoje objave o
+            delovanju občinskega sveta le včasih ali pa sploh nikoli ne opremi z
+            datumom.
           </span>
           To sicer predstavlja minimalni spletni standard, ki omogoča
           sledljivost in analizo ter nadzor nad spoštovanjem zakonsko
@@ -398,9 +410,9 @@
           podatke posredovalo pičlih
           <span class="highlighted"><span class="large">50</span></span> občin.
           <span class="highlighted">
-            Več kot <span class="large">76</span> % občin na naše elektronsko
-            sporočilo, torej sporočilo zainteresirane javnosti, ni niti
-            odgovorilo.
+            Več kot <span class="large">76</span>&nbsp;% občin na naše
+            elektronsko sporočilo, torej sporočilo zainteresirane javnosti, ni
+            niti odgovorilo.
           </span>
         </p>
       </div>
@@ -413,7 +425,7 @@
 
         <p>
           Občinski svet je najvišji organ odločanja o zadevah občine, njegove
-          člane – občinske svetnice in svetnike – pa izvolimo na volitvah.
+          člane - občinske svetnice in svetnike - pa izvolimo na volitvah.
           Njihova naloga je, da prisluhnejo občankam in občanom, predvsem pa, da
           jim s pravočasno objavo informacij omogočijo sodelovanje in vplivanje
           na sprejete odločitve ali pa le nadzor nad delovanjem.
@@ -421,7 +433,7 @@
 
         <p>
           <span class="highlighted"
-            >Samo <span class="large">24</span> % občin vabila na seje
+            >Samo <span class="large">24</span>&nbsp;% občin vabila na seje
             občinskega sveta na svojih spletnih mestih objavlja več kot 7 dni
             pred sejo.</span
           >
@@ -429,9 +441,9 @@
 
         <p>
           <span class="highlighted">
-            To pomeni, da <span class="large">76</span> % občin vabila objavlja
-            manj kot 7 dni pred sejo ali pa iz objave ni mogoče razbrati, kdaj
-            je bilo vabilo objavljeno.
+            To pomeni, da <span class="large">76</span>&nbsp;% občin vabila
+            objavlja manj kot 7 dni pred sejo ali pa iz objave ni mogoče
+            razbrati, kdaj je bilo vabilo objavljeno.
           </span>
           Nekatere občine vabila na spletnem mestu sploh ne objavijo. S tem
           občankam in občanom omejujejo sodelovanje v postopkih sprejemanja za
@@ -461,31 +473,42 @@
           </div>
         </div>
         <div class="example-col">
-          <div class="example">Slika: graf-zapisnik</div>
+          <div class="example">
+            <img src="~/assets/images/graf-zapisnik.png" alt="" />
+          </div>
           <div class="caption">
             Graf, ki prikazuje, koliko občin objavlja transkripte oziroma
             zapisnike sej občinskega sveta.
           </div>
         </div>
       </div>
+
+      <div class="narrow">
+        <p>
+          Čeprav je objava transkriptov najboljši način informiranja občank in
+          občanov, pa lahko te nadomestijo tudi dobri in natančni zapisniki. A
+          izsledki naše raziskave kažejo, da
+          <span class="highlighted">
+            kar
+            <span class="large">61</span>&nbsp;% občin pripravlja slabe
+            zapisnike </span
+          >, ki nenatančno povzemajo razprave sej občinskih svetov, na spletnih
+          mestih
+          <span class="highlighted"><span class="large">9</span></span> občin pa
+          ni mogoče najti niti slabih zapisnikov sej.
+        </p>
+      </div>
+
       <div class="described-example">
+        <!-- <div class="description-col">
+          <div class="description"></div>
+        </div> -->
         <div class="example-col">
-          <div class="example">Slika: P2_S1</div>
+          <div class="example">
+            <img src="~/assets/images/P2_S1.png" alt="" />
+          </div>
           <div class="caption">
             Primer dobrega (1) in slabega zapisnika (2) seje občinskega sveta.
-          </div>
-        </div>
-        <div class="description-col">
-          <div class="description">
-            Čeprav je objava transkriptov najboljši način informiranja občank in
-            občanov, pa lahko te nadomestijo tudi dobri in natančni zapisniki. A
-            izsledki naše raziskave kažejo, da
-            <strong>
-              kar
-              <span class="large">61</span> % občin pripravlja slabe zapisnike </strong
-            >, ki nenatančno povzemajo razprave sej občinskih svetov, na
-            spletnih mestih <span class="large">9</span> občin pa ni mogoče
-            najti niti slabih zapisnikov sej.
           </div>
         </div>
       </div>
@@ -510,8 +533,8 @@
         <p>
           Čeprav je pohvalno, da
           <span class="highlighted">
-            kar <span class="large">89</span> % občin objavlja, kateri svetniki
-            so člani katerih delovnih teles </span
+            kar <span class="large">89</span>&nbsp;% občin objavlja, kateri
+            svetniki so člani katerih delovnih teles </span
           >, pa je to pogosto tudi edini poizkus transparentnosti na tem
           področju. Poleg informacije o članstvu pa smo transparentnost
           delovanja delovnih teles ocenjevali s šestimi indikatorji, s katerimi
@@ -529,11 +552,13 @@
       </div>
 
       <div class="described-example">
-        <div class="description-col">
-          <div class="description">TODO NOTHING</div>
-        </div>
+        <!-- <div class="description-col">
+          <div class="description"></div>
+        </div> -->
         <div class="example-col">
-          <div class="example">Slika: graf-primerjava</div>
+          <div class="example">
+            <img src="~/assets/images/graf-primerjava.png" alt="" />
+          </div>
           <div class="caption">
             Graf s prikazom porazdelitve točk, ki so jih občine prejele na
             področju transparentnosti delovanja delovnih teles.
@@ -542,64 +567,61 @@
       </div>
 
       <div class="narrow">
-        <table>
+        <table class="points-table">
           <tbody>
             <tr>
-              <td>‌</td>
-              <td>1‌ ‌točka‌‌</td>
-              <td>0.5‌ ‌točke‌‌</td>
-              <td>0‌ ‌točk‌‌</td>
+              <th></th>
+              <th>1 točka</th>
+              <th>0.5 točke</th>
+              <th>0 točk</th>
             </tr>
             <tr>
               <td>
-                Ali‌ ‌so‌ ‌seje‌ ‌delovnih‌ ‌teles‌‌ najavljene‌ ‌vnaprej‌ ‌na‌
-                ‌spletnem‌‌ mestu‌ ‌občine?‌‌
+                Ali so seje delovnih teles najavljene vnaprej na spletnem mestu
+                občine?
               </td>
-              <td>7‌‌</td>
-              <td>11‌‌</td>
-              <td>194‌‌</td>
+              <td>7</td>
+              <td>11</td>
+              <td>194</td>
+            </tr>
+            <tr>
+              <td>Ali so gradiva za seje delovnih teles objavljene vnaprej?</td>
+              <td>3</td>
+              <td>6</td>
+              <td>203</td>
             </tr>
             <tr>
               <td>
-                Ali‌ ‌so‌ ‌gradiva‌ ‌za‌ ‌seje‌ ‌delovnih‌‌ teles‌ ‌objavljene‌
-                ‌vnaprej?‌‌
+                Ali so sklepi / rezultati / zapisnik glasovanj odborov in
+                komisij ločeno javno objavljeni?
               </td>
-              <td>3‌‌</td>
-              <td>6‌‌</td>
-              <td>203‌‌</td>
+              <td>53</td>
+              <td>0</td>
+              <td>159</td>
             </tr>
             <tr>
               <td>
-                Ali‌ ‌so‌ ‌sklepi‌ ‌/‌ ‌rezultati‌ ‌/‌‌ zapisnik‌ ‌glasovanj‌
-                ‌odborov‌ ‌in‌‌ komisij‌ ‌ločeno‌ ‌javno‌‌ objavljeni?‌‌
+                Kako hitro so objavljeni sklepi / rezultati / zapisniki sej
+                delovnih teles?
               </td>
-              <td>53‌‌</td>
-              <td>0‌‌</td>
-              <td>159‌‌</td>
+              <td>5</td>
+              <td>12</td>
+              <td>195</td>
+            </tr>
+            <tr>
+              <td>Ali obstaja transkript seje?</td>
+              <td>0</td>
+              <td>11</td>
+              <td>201</td>
             </tr>
             <tr>
               <td>
-                Kako‌ ‌hitro‌ ‌so‌ ‌objavljeni‌ ‌sklepi‌ ‌/‌‌ rezultati‌ ‌/‌
-                ‌zapisniki‌ ‌sej‌ ‌delovnih‌‌ teles?‌‌
+                Ali so rezultati glasovanj objavljeni poimensko za vsakega
+                svetnika?
               </td>
-              <td>5‌‌</td>
-              <td>12‌‌</td>
-              <td>195‌‌</td>
-            </tr>
-            <tr>
-              <td>Ali‌ ‌obstaja‌ ‌transkript‌ ‌seje?‌‌</td>
-              <td>0‌‌</td>
-              <td>11‌‌</td>
-              <td>201‌‌</td>
-            </tr>
-            <tr>
-              <td>
-                Ali‌ ‌so‌ ‌rezultati‌ ‌glasovanj‌‌ objavljeni‌ ‌poimensko‌ ‌za‌‌
-                vsakega‌ ‌svetnika?‌‌
-              </td>
-              <td>0‌‌</td>
-              <td>0‌‌</td>
-              <td>212‌‌</td>
+              <td>0</td>
+              <td>0</td>
+              <td>212</td>
             </tr>
           </tbody>
         </table>
@@ -634,3 +656,21 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.points-table {
+  th,
+  td {
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      text-align: right;
+    }
+  }
+
+  th {
+    white-space: nowrap;
+    min-width: 116px;
+  }
+}
+</style>
