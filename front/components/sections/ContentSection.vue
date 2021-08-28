@@ -39,7 +39,8 @@ export default {
     text-align: center;
   }
 
-  h2 {
+  h2,
+  h3 {
     font-size: 48px;
     font-weight: 900;
     line-height: 1.2;
@@ -53,7 +54,16 @@ export default {
     }
   }
 
-  p {
+  h3 {
+    font-size: 32px;
+  }
+
+  p + h3 {
+    margin-top: 2em;
+  }
+
+  p,
+  ul li {
     font-size: 22px;
     font-weight: 500;
     line-height: 1.6;
@@ -76,6 +86,13 @@ export default {
         line-height: 0;
       }
     }
+  }
+
+  hr {
+    margin: 4rem 0;
+    height: 0;
+    border: none;
+    border-top: 1px solid var(--heading-color);
   }
 
   .boxes {
@@ -130,6 +147,11 @@ export default {
         position: relative;
         top: -1.5rem;
         z-index: 1;
+
+        .large {
+          font-size: 50px;
+          line-height: 0;
+        }
       }
     }
 
@@ -141,6 +163,7 @@ export default {
       }
 
       .caption {
+        width: 740px;
         font-size: 18px;
         font-style: italic;
         font-weight: 500;

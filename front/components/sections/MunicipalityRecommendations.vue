@@ -3,10 +3,17 @@
     <div class="narrow center">
       <h2><em>Pet priporočil</em> za tvojo občino</h2>
       <p>
-        Izpostavili smo le 5 predlogov za večanje transparentnosti in
-        dostopnosti. Občini priporočamo, da podrobno preuči rezultate naše
-        raziskave in implementira primerne spremembe za večjo transparentnost
-        svojega delovanja.
+        Glede na rezultate, ki jih je v raziskavi dosegla tvoja občina, smo
+        podali pet predlogov, ki jih lahko upošteva za bolj odprto in
+        transparentno delovanje. Spodbujamo te, da jim posreduješ spodnje
+        predpripravljeno elektronsko sporočilo in jih pozoveš, da priporočila
+        tudi upoštevajo.
+      </p>
+      <p>
+        Ker to niso edine spremembe, ki jih lahko izvede za izboljšanje števila
+        točk, predlagamo, da občinski funkcionarji podrobno preučijo rezultate
+        celotne analize ter sprejmejo odločitve, ki bodo koristile občankam in
+        občanom.
       </p>
     </div>
     <div class="narrow">

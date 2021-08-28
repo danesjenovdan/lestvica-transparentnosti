@@ -139,9 +139,9 @@ export default function panZoom({
 
   function mouseWheel(e) {
     if (e.deltaY > 0) {
-      setZoom(zoom - zoomStep);
+      setZoom(zoom * 2 ** -zoomStep);
     } else if (e.deltaY < 0) {
-      setZoom(zoom + zoomStep);
+      setZoom(zoom * 2 ** zoomStep);
     }
     setTransform(end0, zoom);
     e.preventDefault();

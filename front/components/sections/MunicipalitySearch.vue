@@ -4,11 +4,11 @@
       <h2>TE ZANIMA, KAKO SE JE ODREZALA <em>TVOJA OBČINA</em>?</h2>
       <div>
         <p>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
-          omnis iste natus error sit voluptatem accusantium doloremque
-          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-          veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          V iskalnik vpiši ime svoje občine in preveri, na katerem mestu
+          lestvice odprtosti in transparentnosti se je znašla. Ugotoviš lahko,
+          kako skrbi za prikazovanje javnih podatkov, do kakšne mere ti omogoča
+          sodelovanje v postopkih odločanja in kaj smo ji priporočili, da stanje
+          izboljša, ali pa jo primerjaš s podobnimi slovenskimi občinami.
         </p>
         <div class="search-wrapper">
           <search-field size="large" show-button />

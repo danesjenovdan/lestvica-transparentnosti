@@ -1,15 +1,24 @@
 <template>
   <content-section variant="white">
+    <div class="narrow">
+      <p class="center">
+        Ker smo ugotovili, da so občine z večjim številom prebivalcev in višjim
+        proračunom bolj odprte in transparentne, direktne primerjave med
+        posameznimi občinami niso vedno najprimernejše. Zato si poglej
+        primerjavo izbrane občine s tistimi, ki imajo podobno število
+        prebivalcev in količino sredstev v proračunu.
+      </p>
+    </div>
     <div class="cols">
       <div class="col">
         <div class="peer-list">
           <div class="peer-list-header">
             <h3>PRIMERJAVA PO ŠTEVILU PREBIVALCEV</h3>
-            <h4>Občine z TODO ali manj prebivalcev</h4>
+            <!-- <h4>Občine z TODO ali manj prebivalcev</h4> -->
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              ultrices gravida. Risus commodo viverra maecenas accumsan. lacus
-              vel facilisis.
+              Primerjaj število točk, ki jih je na lestvici odprtosti in
+              transparentnosti dosegla izbrana občina, z doseženimi točkami
+              slovenskih občin, ki imajo podobno število prebivalcev.
             </p>
           </div>
           <div class="peer-list-elements">
@@ -30,12 +39,12 @@
       <div class="col">
         <div class="peer-list">
           <div class="peer-list-header">
-            <h3>PRIMERJAVA PO VELIKOSTI PRORAČUNA</h3>
-            <h4>Občine z TODO € ali manjšim proračunom</h4>
+            <h3>PRIMERJAVA PO VIŠINI PRORAČUNA</h3>
+            <!-- <h4>Občine z TODO € ali manjšim proračunom</h4> -->
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              ultrices gravida. Risus commodo viverra maecenas accumsan. lacus
-              vel facilisis.
+              Primerjaj število točk, ki jih je na lestvici odprtosti in
+              transparentnosti dosegla izbrana občina, z doseženimi točkami
+              slovenskih občin, ki imajo podoben proračun.
             </p>
           </div>
           <div class="peer-list-elements">
@@ -82,6 +91,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.cols {
+  margin-top: 7rem;
+}
+
 .peer-list {
   margin: 0 auto;
   max-width: 480px;

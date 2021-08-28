@@ -1,15 +1,60 @@
+const PAGE_TITLE = 'Lestvica transparentnosti';
+const OG_TITLE = 'Lestvica odprtosti in transparentnosti slovenskih občin';
+const OG_DESCRIPTION =
+  'Preveri, ali tvoja občina omogoča informiranje o njenem delovanju in vplivanje na njene odločitve.';
+const OG_IMAGE = '';
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'lestvica-transparentnosti',
+    title: PAGE_TITLE,
     htmlAttrs: {
-      lang: 'en',
+      lang: 'sl',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
+      { property: 'og:site_name', content: PAGE_TITLE },
+      { property: 'og:type', content: 'website' },
+      { name: 'author', content: 'Danes je nov dan' },
+      { name: 'twitter:creator', content: '@danesjenovdan' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        hid: 'og-title',
+        property: 'og:title',
+        content: OG_TITLE,
+      },
+      {
+        hid: 'twitter-title',
+        name: 'twitter:title',
+        content: OG_TITLE,
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: OG_DESCRIPTION,
+      },
+      {
+        hid: 'og-description',
+        property: 'og:description',
+        content: OG_DESCRIPTION,
+      },
+      {
+        hid: 'twitter-description',
+        name: 'twitter:description',
+        content: OG_DESCRIPTION,
+      },
+      {
+        hid: 'og-image',
+        property: 'og:image',
+        content: OG_IMAGE,
+      },
+      {
+        hid: 'twitter-image',
+        name: 'twitter:image',
+        content: OG_IMAGE,
+      },
     ],
     link: [
       // favicons

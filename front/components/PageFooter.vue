@@ -63,7 +63,7 @@
               <div class="col credits-col">
                 <div>
                   Analizo so s finančno podporo
-                  <a href="" target="_blank">Active citizens fund Slovenija</a>
+                  <a href="#" target="_blank">Active citizens fund Slovenija</a>
                   pripravili
                   <a
                     href="https://danesjenovdan.si"
@@ -71,11 +71,11 @@
                     class="heavy-link"
                     >Danes je nov dan</a
                   >,
-                  <a href="" target="_blank" class="heavy-link"
+                  <a href="#" target="_blank" class="heavy-link"
                     >Organizacija za participatorno družbo</a
                   >
                   in
-                  <a href="" target="_blank" class="heavy-link"
+                  <a href="https://pic.si/" target="_blank" class="heavy-link"
                     >PIC - Pravni center za varstvo človekovih pravic in
                     okolja</a
                   >.

@@ -17,14 +17,60 @@
           <li>
             <a href="#">
               <em>UVOD</em>
-              Ali je delovanje slovenskih občin na spletu predstavljeno
-              transparentno in dostopno?
+              Ali je delovanje slovenskih občin na spletu odprto in
+              transparentno?
             </a>
           </li>
           <li>
             <a href="#">
-              <em>LESTVICA TRANSPARENTNOSTI IN DOSTOPNOSTI</em>
-              Preveri ocene vseh občin
+              <em>LESTVICA ODPRTOSTI IN TRANSPARENTNOSTI</em>
+              Preveri, kako so se odrezale posamezne občine.
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <em>KAJ JE POKAZALA RAZISKAVA?</em>
+              Poglej širšo sliko stanja odprtosti in transparentnosti lokalne
+              samouprave.
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <em>TRANSPARENTNOST DELOVANJA OBČINSKEGA SVETA</em>
+              Koliko zares izvem o delovanju občinskega sveta?
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <em>PREGLEDNOST IN DOSTOP DO INFORMACIJ</em>
+              Ali so občinski podatki na spletnem mestu razumljivo prikazani?
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <em>TRANSPARENTNOST IN VKLJUČENOST V SPREJEMANJE PRORAČUNA</em>
+              Ali lahko sodelujem v postopku sprejemanja proračuna?
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <em>DOSTOPNOST SPLETNEGA MESTA</em>
+              Ali so informacije na spletnem mestu na voljo vsem občankam in
+              občanom?
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <em>VKLJUČENOST V DELOVANJE OBČINE IN OBVEŠČANJE</em>
+              V katerih občinskih procesih lahko sodelujem in koliko o tem
+              izvem?
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <em>KAKO SE JE ODREZALA TVOJA OBČINA?</em>
+              Preveri, koliko točk je dosegla tvoja občina, in jo primerjaj z
+              ostalimi.
             </a>
           </li>
         </ul>
@@ -86,7 +132,7 @@ button.toc-button {
     z-index: 1000;
     background-color: #a9d8ce;
     padding: 2rem 3rem;
-    width: 450px;
+    width: 500px;
 
     ul {
       &,
