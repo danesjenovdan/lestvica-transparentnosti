@@ -628,6 +628,545 @@
       </div>
     </content-section>
 
+    <content-section variant="orange">
+      <!-- (3) Ali lahko občani nadzorujejo delo izvoljenih predstavnikov -->
+      <div class="narrow">
+        <h2>Ali lahko občani nadzorujejo delo izvoljenih predstavnikov?</h2>
+
+        <p>
+          Občinski svetniki in svetnice so demokratično izvoljeni s strani
+          občank ter občanov in jim za svoje delo tudi odgovarjajo. Pri tem pa
+          ključno vlogo odigra predvsem dostopnost podatkov, ki omogoča ustrezen
+          nadzor nad dejanji in sprejetimi odločitvami svetnic in svetnikov ter
+          tako še dodatno dviguje njihovo odgovornost.
+        </p>
+
+        <p>
+          Zato smo najprej pogledali objavo poimenskih rezultatov posameznih
+          glasovanj kot pomembnega elementa odgovornosti občinskih svetnikov pri
+          zastopanju interesov določenega dela občank in občanov. Ugotovili smo,
+          da
+          <span class="highlighted">
+            kar 93 % občin ne objavlja podatkov o glasovanju posameznih svetnic
+            in svetnikov </span
+          >, kar pomeni, da javnosti ne omogočajo nikakršnega mehanizma nadzora
+          nad izvoljenimi predstavniki. Ob manku temeljitih evidenc vseh
+          glasovanj je prav tako težko predvideti, kakšne odločitve bodo
+          svetnice in svetniki sprejemali na sejah.
+        </p>
+      </div>
+
+      <div class="boxes">
+        <div class="box">
+          <div class="box-text">
+            <strong>
+              44 % občin na svojih spletnih mestih ne navaja strankarske
+              pripadnosti svetnic in svetnikov.
+            </strong>
+            Informacije o strankarski pripadnosti so namreč pomembne zaradi
+            informiranja občanov o izvoljenih predstavnikih in zagotavljanja
+            politične odgovornosti.
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-text">
+            <strong>
+              96 % občin na spletnih mestih ne objavlja življenjepisa oziroma
+              drugih relevantnih podatkov o občinskih svetnicah in svetnikih,
+            </strong>
+            kar onemogoča prepoznavanje njihovih kompetenc ali morebitnih
+            konfliktov interesov.
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-text">
+            <strong>
+              71 % občin na spletnih mestih nima objavljenih nikakršnih
+              kontaktnih podatkov občinskih svetnic in svetnikov,
+            </strong>
+            tako da se na njih na preprost in vsem dostopen način ni mogoče
+            obrniti niti z najenostavnejšimi vprašanji.
+          </div>
+        </div>
+      </div>
+    </content-section>
+
+    <content-section variant="green">
+      <!-- (4) Ali lahko občani sodelujejo v postopku sprejemanja proračuna -->
+      <div class="narrow">
+        <h2>Ali lahko občani sodelujejo v postopku sprejemanja proračuna?</h2>
+
+        <p>
+          Proračun je najpomembnejši dokument, ki ga občina sprejema v sklopu
+          svojega delovanja, saj določa vse aktivnosti občine in porabo vseh
+          njenih javnih sredstev. Ker se s sprejemanjem proračuna udejanja volja
+          političnih predstavnikov občanov, mora biti ta postopek čim bolj
+          transparenten, razumljiv, pregleden, vključujoč in predvidljiv. To je
+          mogoče doseči zgolj z ustrezno in pravočasno predstavitvijo proračuna,
+          ki javnosti omogoča sodelovanje, saj je dokumentacija sicer izjemno
+          obsežna ter tehnično in vsebinsko zapletena.
+        </p>
+
+        <p>
+          Vendar pa raziskava kaže, da
+          <span class="highlighted">
+            kar 55 občin proračuna za leto 2020 ni sprejelo v zakonsko
+            določenem, temveč šele po tromesečnem roku začasnega financiranja
+          </span>
+          (do konca marca 2020),
+          <span class="highlighted">
+            6 občin pa je s sprejemanjem zamudilo tudi ta datum </span
+          >, torej so delovale protizakonito. Poleg tega
+          <span class="highlighted">
+            7 občin proračun sprejema samo z enim branjem, nekaj občin pa obe
+            branji izvede v istem dnevu na isti seji </span
+          >. Zamikanje sprejetja proračuna posega v možnost občanov za ustrezno
+          informiranje ali sodelovanje v tem postopku, sprejemanje z enim
+          branjem oziroma dvema branjema na isti seji pa jim močno krni
+          priložnost, da se seznanijo z dokumentacijo, medsebojno posvetujejo
+          ter podajo svoje pripombe.
+        </p>
+
+        <p>
+          Ena od boljših priložnosti za vključevanje občanov v postopek
+          sprejemanja letnih proračunov je organizirana javna razprava. Številne
+          občine jo v poslovnikih sicer predvidijo, a se ta v praksi ne izvaja
+          oziroma se izvede na tako okrnjen način, da so občani z njo le stežka
+          seznanjeni.
+        </p>
+      </div>
+
+      <div class="boxes">
+        <div class="box">
+          <div class="box-text">
+            <strong>
+              115 občin je za proračun za leto 2020 organiziralo javno razpravo
+              in vabilo objavilo na svojem spletnem mestu.
+            </strong>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-text">
+            <strong>
+              53 občin je rezultate razprave delilo na svojem spletnem mestu.
+            </strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="narrow">
+        <p>
+          Ker pa so proračuni več sto strani dolgi, tehnično zapleteni
+          dokumenti, je pomembno tudi, v kakšni obliki so objavljeni. Tako na
+          primer
+          <span class="highlighted">
+            75 % občin omogoča iskanje po proračunu, ostale pa objavijo zgolj
+            skeniran dokument PDF </span
+          >, v katerem je podatke precej težje odkriti.
+        </p>
+      </div>
+
+      <div class="described-example">
+        <!-- <div class="description-col">
+          <div class="description"></div>
+        </div> -->
+        <div class="example-col">
+          <div class="example">
+            <img src="~/assets/images/P4_S1.png" alt="" />
+          </div>
+          <div class="caption">
+            Primer več sto strani dolgega, tehnično zapletenega občinskega
+            proračuna, po katerem ni mogoče iskati z bližnjico
+            CTRL&nbsp;+&nbsp;F.
+          </div>
+        </div>
+      </div>
+
+      <div class="narrow">
+        <p>
+          Laičnim občankam in občanom lahko razumevanje proračunov predstavlja
+          težave, četudi so vse verzije objavljene pravočasno, datoteke pa so na
+          voljo v strojno berljivih formatih. Zato smo raziskali, ali skušajo
+          občine svoje proračune in poročila o porabi javnega denarja objaviti v
+          razumljivejši obliki. Ugotovili smo, da
+          <span class="highlighted">
+            je proračun za leto 2020 na uporabniku prijazen način prikazalo le 5
+            občin, 3 pa so poskusile bolj preprosto prikazati porabo sredstev </span
+          >.
+        </p>
+
+        <p>
+          Občine morajo omogočiti tudi spremljanje izvrševanja proračuna, kar
+          lahko najbolj priročno izvedejo s poročilom o izvajanju proračuna, ki
+          ga mora župan po zakonu predstaviti občinskemu svetu. A v analizi smo
+          ugotovili, da je
+          <span class="highlighted">
+            le 60 % občin to poročilo objavilo na svojem spletnem mestu
+          </span>
+          ter tako vpogled omogočilo tudi zainteresiranim občankam in občanom.
+        </p>
+      </div>
+    </content-section>
+
+    <content-section variant="yellow">
+      <!-- (5) Ali so spletna mesta dostopna vsem občanom -->
+      <div class="narrow">
+        <h2>Ali so spletna mesta dostopna vsem občanom?</h2>
+
+        <p>
+          Odpiranje podatkov o delu občine pa ni zadostno, če informacije niso
+          objavljene tako, da so dostopne vsem družbenim skupinam. Država zato z
+          <a
+            href="http://www.pisrs.si/Pis.web/pregledPredpisa?id=ZAKO7718"
+            target="_blank"
+            >Zakonom o dostopnosti spletišč in mobilnih aplikacij</a
+          >
+          določa, da je potrebno vsem uporabnikom omogočiti lažji dostop do
+          informacij in storitev javnega sektorja. To pomeni, da morajo občinska
+          spletna mesta:
+        </p>
+      </div>
+
+      <div class="boxes">
+        <div class="box">
+          <div class="box-text">
+            Predstaviti informacije in uporabniški vmesnik na načine, ki jih
+            uporabniki lahko zaznajo.
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-text">
+            Zagotoviti delujoče uporabniške vmesnike in navigacijo.
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-text">
+            Informacije in uporabniški vmesnik predstaviti na razumljiv način.
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-text">
+            Predstaviti vsebino tako, da deluje na najpogosteje uporabljenih
+            pomožnih tehnologijah, vključno z lupami, bralniki zaslona in orodji
+            za prepoznavanje govora.
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-text">
+            Občine s tem zagotovijo, da je spletno mesto dostopno osebam s
+            težavami pri gibanju, razumevanju, slepim in slabovidnim, gluhim in
+            naglušnim ter osebam z drugimi oviranostmi.
+          </div>
+        </div>
+      </div>
+
+      <div class="narrow">
+        <hr />
+
+        <p>
+          A razkorak med zakonsko določenimi minimalnimi standardi in prakso je
+          velik, za akutnega pa se je izkazal predvsem v času pandemije, ko smo
+          večkrat ostali odvisni zgolj od spletnih storitev. Najbolj to občutijo
+          osebe z oviranostmi, ki so pogosto odvisne le od digitalnih virov
+          informacij, nedostopnost in neuporabnost občinskih spletnih mest pa
+          jih silita v še večjo izoliranost. Vendar spletna mesta, ki so
+          prilagojena standardom dostopnosti, niso koristna samo za partikularne
+          dele prebivalstva, temveč so jasna, preprosta in enostavna za celotno
+          populacijo.
+        </p>
+
+        <hr />
+
+        <p>
+          Pri analizi vizualne predstavitve informacij in uporabniškega vmesnika
+          smo preverjali ustreznost barvnega kontrasta med ozadjem in ospredjem,
+          saj ta zagotavlja lažje razlikovanje med različnimi deli spletnega
+          mesta. Ugotovili smo, da
+          <span class="highlighted">
+            primeren barvni kontrast uporablja zgolj 36 % občinskih spletnih
+            mest </span
+          >. Poleg tega morajo spletna mesta omogočati tudi berljivost vsebin ob
+          uporabi brskalniške nastavitve za povečavo, kar koristi predvsem
+          slabovidnim, a
+          <span class="highlighted">tega ne podpira 13 % spletnih mest</span>.
+        </p>
+      </div>
+
+      <div class="described-example">
+        <!-- <div class="description-col">
+          <div class="description"></div>
+        </div> -->
+        <div class="example-col">
+          <div class="example">
+            <img src="~/assets/images/P5_S1.png" alt="" />
+          </div>
+          <div class="caption">
+            Primer spletnega mesta, ki upošteva ustrezno razlikovanje med
+            bravnih kontrastom ozadja in ospredja (1) in primer spletnega mesta,
+            ki tega ne upošteva (2).
+          </div>
+        </div>
+      </div>
+
+      <div class="narrow">
+        <p>
+          Da bi bilo brskanje in iskanje informacij omogočeno vsem, morajo
+          spletna mesta zagotavljati delujoče uporabniške vmesnike in
+          navigacijo, ti elementi pa morajo biti dostopni s tipkovnico, bralniki
+          zaslona, orodji za prepoznavanje govora ali se odpirati s klikom.
+          Slednje je izjemno pomembno pri zahtevnejših navigacijskih elementih,
+          kot je denimo spustni meni.
+          <span class="highlighted"
+            >Žal kar 84 % menijev občinskih spletnih mest ni dostopnih na
+            klik</span
+          >, kar izjemno oteži rabo tistim, ki s težavo uporabljajo miško.
+          Občine se bolje odrežejo pri navigiranju po spletnem mestu z rabo
+          tipkovnice, a še vedno kar
+          <span class="highlighted"
+            >30,7 % spletnih mest ne omogoča takšnega brskanja</span
+          >.
+        </p>
+      </div>
+
+      <!-- <div class="described-example">
+        <div class="description-col">
+          <div class="description"></div>
+        </div>
+        <div class="example-col">
+          <div class="example">
+            <img src="~/assets/images/P5_S1.png" alt="" />
+          </div>
+          <div class="caption">
+            Primer spletnega mesta, ki upošteva ustrezno razlikovanje med
+            bravnih kontrastom ozadja in ospredja (1) in primer spletnega mesta,
+            ki tega ne upošteva (2).
+          </div>
+        </div>
+      </div> -->
+
+      <div class="narrow">
+        <hr />
+
+        <p>
+          Osnovno prilagojenost spletnih mest za bralnike zaslona smo preverjali
+          z razširjenostjo uporabe: 1) označbe naslovov z elementi H v HTML
+          kodi, ki bralniku omogočajo razlikovanje med različnimi tipi vsebin in
+          preskakovanje med naslovi v dokumentih; 2) lastnost alt, ki prikaže
+          alternativno besedilo za slikovno gradivo; 3) besedil v slikah, ki jih
+          bralniki ne morejo prebrati.
+        </p>
+
+        <p>
+          <span class="highlighted">
+            Vse te elemente uporablja zgolj 8,5 % občinskih spletnih mest, 2,8 %
+            pa ne uporablja niti enega od njih.
+          </span>
+          Največjo težavo občinam povzroča raba lastnosti alt, ki od
+          administratorjev spletnega mesta zahteva tekstovni opis vsake slikovne
+          vsebine, medtem ko velika večina spletnih mest uporablja elemente H.
+        </p>
+      </div>
+
+      <div class="described-example">
+        <!-- <div class="description-col">
+          <div class="description"></div>
+        </div> -->
+        <div class="example-col">
+          <div class="example">
+            <img src="~/assets/images/P5_S3.png" alt="" />
+          </div>
+          <div class="caption">
+            Primer spletnega mesta občine, ki ne uporablja elementov
+            prilagojenosti spletnih mest za bralnike zaslona.
+          </div>
+        </div>
+      </div>
+
+      <div class="narrow">
+        <hr />
+
+        <p>
+          Pomemben del dostopnosti spletnih mest predstavlja tudi razumljivost
+          informacij, ki med drugim vključuje jasna poimenovanja podstrani,
+          povezav in dokumentov. V analizi smo ugotovili, da se
+          <span class="highlighted">
+            zgolj 27,4 % občin poslužuje razumljivih poimenovanj </span
+          >, največjo težavo pa predstavljajo
+          <span class="highlighted">
+            poimenovanja dokumentov, saj so ti v kar 65,6 % občin naslovljeni
+            nerazumljivo </span
+          >.
+        </p>
+      </div>
+
+      <!-- <div class="described-example">
+        <div class="description-col">
+          <div class="description"></div>
+        </div>
+        <div class="example-col">
+          <div class="example">
+            <img src="~/assets/images/P5_S4.png" alt="" />
+          </div>
+          <div class="caption"></div>
+        </div>
+      </div> -->
+
+      <div class="narrow">
+        <p>
+          Pri oblikovanju vprašalnika za ocenjevanje dostopnosti spletnih mest
+          slovenskih občin smo izhajali iz priporočil organizacije World Wide
+          Web Consortium za dostopnost spletnih vsebin WCAG 2.1 in njihovega
+          <a
+            href="https://www.w3.org/WAI/test-evaluate/preliminary/"
+            target="_blank"
+            >enostavnega pregleda</a
+          >, za izhodišče pa smo vzeli tudi
+          <a
+            href="https://www.gov.uk/government/publications/doing-a-basic-accessibility-check-if-you-cant-do-a-detailed-one/doing-a-basic-accessibility-check-if-you-cant-do-a-detailed-one"
+            target="_blank"
+            >vodič GOV.UK</a
+          >. Raziskava, ki smo jo na tem področju izvedli, sicer ni celostna,
+          nudi pa koristen vpogled v dostopnost spletnih mest slovenskih občin
+          in lahko služi kot izhodišče za nadaljnje analize.
+        </p>
+      </div>
+    </content-section>
+
+    <content-section variant="blue">
+      <!-- (6) Ali so občani vključeni v delovanje občine in o tem ustrezno obveščeni -->
+      <div class="narrow">
+        <h2>
+          Ali so občani vključeni v delovanje občine in o tem ustrezno
+          obveščeni?
+        </h2>
+
+        <p>
+          Ker so občanke in občani najboljši vir informacij o potrebah lokalne
+          skupnosti, njihovo vključevanje v procese odločanja občini ne prinaša
+          le boljših ukrepov ali sprememb, temveč pripomore tudi k lažjemu
+          uvajanju sprejetih odločitev in veča zaupanje v njih.
+        </p>
+
+        <p>
+          Ena od pomembnejših oblik vključevanja občank in občanov je izvajanje
+          participativnega proračuna, ki omogoča neposredno podajanje predlogov
+          posamičnih manjših projektov ter reprezentativno izražanje volje o
+          njih.
+          <span class="highlighted">
+            Participativni proračun je v letu 2020 izvedlo 12 slovenskih občin.
+          </span>
+        </p>
+
+        <p>
+          A vseh pristopov vključevanja ter obveščanja občank in občanov ni
+          mogoče spoznati le s pregledom spletnih mest, zato smo vsem občinam o
+          tej temi poslali vprašalnik. V 4 mesecih, kolikor je bil vprašalnik
+          občinskim predstavnikom dostopen, nam je podatke posredovalo zgolj 50
+          občin, torej
+          <span class="highlighted">
+            več kot 76 % občin na naše elektronsko sporočilo ni odgovorilo </span
+          >. Ta podatek sam po sebi pove dovolj o stanju odprtosti lokalne
+          samouprave v Sloveniji.
+        </p>
+
+        <p>
+          Med občinami, ki podatke so posredovale, smo opazili, da pred pripravo
+          odlokov ali osnutkov predpisov le redke izvajajo posvetovanja z
+          občankami in občani.
+        </p>
+      </div>
+
+      <div class="boxes">
+        <div class="box">
+          <div class="box-text">
+            <strong>
+              23 % občin izvaja samo zakonsko določena posvetovanja
+            </strong>
+            (torej ob sprejemanju pomembnejših odlokov, kot sta proračun ali
+            občinski prostorski načrt).
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-text">
+            <strong>
+              Le 16 % občin komentarje ter predloge občank in občanov objavi na
+              spletu.
+            </strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="narrow">
+        <p>
+          Bolj pogosto občine omogočajo oddajo pripomb in predlogov, a jih
+          večina nato ne objavi na svojem spletnem mestu. Objava komunikacije z
+          občani je ključna za transparentnost delovanja in lahko bistveno
+          pripomore k večji vključenosti javnosti.
+        </p>
+      </div>
+
+      <div class="boxes">
+        <div class="box">
+          <div class="box-text">
+            <strong>
+              75 % občin občankam in občanom omogoča, da svoje predloge oddajo
+              na spletu.
+            </strong>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-text">
+            <strong>
+              9 % občin predloge in odgovore objavi na spletnem mestu.
+            </strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="narrow">
+        <p>
+          Analizirali smo tudi kanale, ki jih občine uporabljajo za
+          komuniciranje z občankami in občani. Med občinami, ki so nam
+          posredovale podatke, jih:
+        </p>
+      </div>
+
+      <div class="boxes">
+        <div class="box">
+          <div class="box-text">
+            <strong>
+              22 % ne uporablja družbenih omrežij za obveščanje o svojih
+              participativnih procesih.
+            </strong>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-text">
+            <strong>
+              29 % o svojih participativnih procesih ne komunicira niti na
+              lastnem spletnem mestu.
+            </strong>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-text">
+            <strong>
+              43 % občank in občanov o participativnih procesih ne obvešča s
+              pomočjo oglasne deske..
+            </strong>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-text">
+            <strong>
+              67 % ne uporablja spletnega novičnika za obveščanje občank in
+              občanov o participativnih procesih.
+            </strong>
+          </div>
+        </div>
+      </div>
+    </content-section>
+
     <municipality-search />
 
     <page-footer />

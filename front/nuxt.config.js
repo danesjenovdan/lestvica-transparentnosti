@@ -5,6 +5,11 @@ const OG_DESCRIPTION =
 const OG_IMAGE = '';
 
 export default {
+  target: 'static',
+  router: {
+    base: '/les-trans-test/',
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: PAGE_TITLE,

@@ -4,32 +4,49 @@
       <div class="cols">
         <div class="col text-col">
           <h1>
-            Ali je delovanje slovenskih občin na spletu predstavljeno
-            <em>TRANSPARENTNO</em> in <em>DOSTOPNO</em>?
+            Ali je delovanje slovenskih občin na spletu odprto in transparentno?
           </h1>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.
-            </p>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-              unde omnis iste natus error sit voluptatem accusantium doloremque
-              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-              veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            </p>
-            <p>
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-              ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-              non numquam eius modi tempora incidunt ut labore et dolore magnam
-              aliquam quaerat voluptatem.
-            </p>
-          </div>
+          <p>
+            Čeprav se morda zdi, da igrajo v državi pomembno vlogo le odločitve
+            vlade, tudi delovanje lokalne samouprave bistveno vpliva na naša
+            vsakdanja življenja. Ker mora biti njihovo delovanje odprto in
+            vključujoče, smo na inštitutu Danes je nov dan v sodelovanju z
+            Organizacijo za participatorno družbo ter PIC - Pravni center za
+            varstvo človekovih pravic in okolja pripravili
+            <strong>
+              raziskavo transparentnosti in odprtosti slovenskih občin, v kateri
+              smo z 80 kazalniki ocenili vseh 212 slovenskih občin </strong
+            >.
+          </p>
+          <h2>Kaj smo ugotovili v raziskavi?</h2>
+          <p>
+            Zaključki kažejo zaskrbljujočo sliko. Večina občin pri odpiranju
+            svojega delovanja ni proaktivna, temveč zgolj sledi zastarelim
+            praksam in nizkim zakonskim standardom. Tudi kadar so podatki na
+            spletnih mestih objavljeni, so pogosto skriti v zapletene labirinte
+            hiperpovezav ali pa na voljo le v več sto strani dolgih in
+            zapletenih dokumentih.
+            <strong>
+              Kar 95 % občin pri pregledu vsebin za leto 2020 ni doseglo niti
+              polovice od 100 možnih točk </strong
+            >, tudi najvišje ocenjena občina pa je dosegla le 67,2 točke. Občine
+            tako v veliki meri ne omogočajo ustrezne participacije ali
+            informiranja občank in občanov.
+          </p>
+          <p>
+            V nadaljevanju so predstavljeni rezultati analize, kjer je mogoče
+            najti podatke za posamezno občino, hkrati pa te primerjati tudi z
+            vsemi občinami ali pa tistimi, ki imajo podobno število prebivalcev
+            oziroma višino proračuna. Poleg tega pa smo pripravili tudi pogled
+            na širšo sliko stanja odprtosti in transparentnosti na področju
+            lokalne uprave v Sloveniji.
+            <strong>
+              Za vsako občino smo podali nekaj priporočil, s pomočjo katerih bo
+              lahko v prihodnje delovala bolj odprto, tebe pa spodbujamo, da jim
+              pošlješ predpripravljeno elektronsko sporočilo in jih pozoveš, da
+              jih upoštevajo.
+            </strong>
+          </p>
         </div>
         <div class="col image-col">
           <div class="image-wrapper">
@@ -64,7 +81,8 @@ export default {
   padding: 7rem 0;
   color: #fff;
 
-  h1 {
+  h1,
+  h2 {
     font-size: 48px;
     font-weight: 900;
     line-height: 1.2;
@@ -76,6 +94,10 @@ export default {
       font-style: italic;
       color: #ffc569;
     }
+  }
+
+  h2 {
+    font-size: 32px;
   }
 
   p {

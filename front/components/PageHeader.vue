@@ -4,7 +4,10 @@
       <div class="container">
         <nav class="cols header">
           <div class="col main-col">
-            <h1><nuxt-link to="/">Lestvica transparentnosti</nuxt-link></h1>
+            <nuxt-link to="/">
+              <h1>Lestvica transparentnosti:</h1>
+              <small>odprtost in transparentnost slovenskih občin</small>
+            </nuxt-link>
             <search-field />
           </div>
           <div class="col toc-col">
@@ -43,24 +46,31 @@ header {
       justify-content: space-between;
       align-items: center;
 
-      h1 {
+      h1,
+      small {
         margin: 0;
         color: #fff;
         font-family: 'Lexend', sans-serif;
         font-size: 28px;
         font-weight: 600;
+        line-height: 1.4;
+      }
 
-        a {
-          text-decoration: none;
+      small {
+        font-size: 16px;
+        margin-left: 1px;
+      }
 
-          &:hover,
-          &:focus {
-            $hover-bg-color: rgba(#fff, 0.15);
+      a {
+        text-decoration: none;
 
-            outline: none;
-            background-color: $hover-bg-color;
-            box-shadow: -0.2em 0 0 $hover-bg-color, 0.2em 0 0 $hover-bg-color;
-          }
+        &:hover,
+        &:focus {
+          $hover-bg-color: rgba(#fff, 0.15);
+
+          outline: none;
+          background-color: $hover-bg-color;
+          box-shadow: -0.2em 0 0 $hover-bg-color, 0.2em 0 0 $hover-bg-color;
         }
       }
     }
