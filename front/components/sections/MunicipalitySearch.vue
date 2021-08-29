@@ -31,6 +31,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/styles/breakpoints';
+
 h2 {
   max-width: 700px;
   margin-left: auto;
@@ -39,6 +41,10 @@ h2 {
 
 .search-wrapper {
   margin-top: 4rem;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 2rem;
+  }
 
   .search-field {
     margin-left: auto;

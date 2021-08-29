@@ -42,8 +42,6 @@ import PageHeader from '~/components/PageHeader.vue';
 import LandingIntro from '~/components/sections/LandingIntro.vue';
 import ContentSection from '~/components/sections/ContentSection.vue';
 import MapWithTabs from '~/components/sections/MapWithTabs.vue';
-import MunicipalitySearch from '~/components/sections/MunicipalitySearch.vue';
-import PageFooter from '~/components/PageFooter.vue';
 import Landing0 from '~/components/sections/Landing0.vue';
 import Landing1 from '~/components/sections/Landing1.vue';
 import Landing2 from '~/components/sections/Landing2.vue';
@@ -51,6 +49,8 @@ import Landing3 from '~/components/sections/Landing3.vue';
 import Landing4 from '~/components/sections/Landing4.vue';
 import Landing5 from '~/components/sections/Landing5.vue';
 import Landing6 from '~/components/sections/Landing6.vue';
+import MunicipalitySearch from '~/components/sections/MunicipalitySearch.vue';
+import PageFooter from '~/components/PageFooter.vue';
 
 export default {
   components: {
@@ -58,8 +58,6 @@ export default {
     LandingIntro,
     ContentSection,
     MapWithTabs,
-    MunicipalitySearch,
-    PageFooter,
     Landing0,
     Landing1,
     Landing2,
@@ -67,6 +65,8 @@ export default {
     Landing4,
     Landing5,
     Landing6,
+    MunicipalitySearch,
+    PageFooter,
   },
   async asyncData({ store }) {
     await store.dispatch('ensureMunicipalitiesList');

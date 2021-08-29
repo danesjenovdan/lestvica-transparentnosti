@@ -82,6 +82,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/styles/breakpoints';
+
 .search-field {
   width: 250px;
   position: relative;
@@ -89,6 +91,10 @@ export default {
 
   &.search-field--large {
     width: 450px;
+
+    @include media-breakpoint-down(md) {
+      width: auto;
+    }
   }
 
   &.search-field--dark {
@@ -146,6 +152,7 @@ export default {
 
     .autocomplete-result {
       cursor: default;
+      margin: 0;
       padding: 0.7em 0.5em 0.5em 0.5em;
       font-weight: 300;
 
@@ -162,8 +169,6 @@ export default {
 }
 
 .search-field.search-field--large ::v-deep {
-  width: 450px;
-
   .autocomplete-input {
     font-size: 20px;
     font-style: italic;

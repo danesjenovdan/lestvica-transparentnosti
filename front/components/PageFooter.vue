@@ -100,6 +100,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/styles/breakpoints';
+
 .donation-bar {
   display: flex;
   justify-content: center;
@@ -108,6 +110,13 @@ export default {
   padding: 4rem 0;
   font-size: 22px;
   text-align: center;
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 1rem;
+    font-size: 16px;
+  }
 
   .donate-button {
     display: flex;
@@ -118,6 +127,10 @@ export default {
     font-weight: 900;
     line-height: 1;
     text-decoration: none;
+
+    @include media-breakpoint-down(md) {
+      font-size: 22px;
+    }
 
     &:hover {
       background-color: rgba(#fff, 0.15);
@@ -139,18 +152,32 @@ footer {
   nav.footer {
     padding: 4rem 0;
 
+    @include media-breakpoint-down(md) {
+      padding: 2rem 0;
+      text-align: center;
+    }
+
     .nav-col {
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @include media-breakpoint-down(md) {
+        align-items: center;
+      }
 
       .nav-link-wrapper {
         display: flex;
         align-items: center;
         font-size: 20px;
 
+        @include media-breakpoint-down(md) {
+          font-size: 16px;
+          margin-bottom: 1em;
+        }
+
         &:not(:last-child) {
-          margin-bottom: 1.5rem;
+          margin-bottom: 1em;
         }
 
         svg {
@@ -168,6 +195,10 @@ footer {
         display: block;
         width: auto;
         height: 80px;
+
+        @include media-breakpoint-down(md) {
+          margin: 1.5rem auto;
+        }
       }
     }
 
@@ -175,6 +206,10 @@ footer {
       flex: 1.5;
       font-size: 20px;
       line-height: 1.4;
+
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+      }
 
       .heavy-link {
         font-weight: 900;

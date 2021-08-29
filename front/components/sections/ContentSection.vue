@@ -25,8 +25,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/styles/breakpoints';
+
 .content-section {
   padding: 7rem 0;
+
+  @include media-breakpoint-down(md) {
+    padding: 3rem 0;
+  }
 }
 
 .content-section ::v-deep {
@@ -48,6 +54,10 @@ export default {
     color: var(--heading-color);
     margin-bottom: 1.2em;
 
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+    }
+
     em {
       font-style: italic;
       color: var(--heading-em-color);
@@ -55,14 +65,16 @@ export default {
   }
 
   h3 {
-    font-size: 32px;
-  }
-
-  p + h3 {
     margin-top: 2em;
+    font-size: 32px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
+    }
   }
 
   p,
+  ul,
   ul li,
   table {
     font-size: 22px;
@@ -70,9 +82,22 @@ export default {
     line-height: 1.6;
     margin-bottom: 1.5em;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+      font-weight: 300;
+    }
+
     .large {
       font-size: 32px;
       line-height: 1.4;
+
+      @include media-breakpoint-down(md) {
+        font-size: 22px;
+      }
     }
 
     .highlighted {
@@ -94,9 +119,14 @@ export default {
     height: 0;
     border: none;
     border-top: 1px solid var(--heading-color);
+
+    @include media-breakpoint-down(md) {
+      margin: 2rem 0;
+    }
   }
 
   table {
+    width: 100%;
     table-layout: fixed;
     border: 0;
     border-collapse: collapse;
@@ -120,25 +150,51 @@ export default {
     display: flex;
     gap: 2rem;
     justify-content: center;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin: 6rem 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      margin: 2.5rem 0;
+    }
 
     .box {
       width: 400px;
       background-color: var(--highlight-color);
       padding: 2.5rem 2rem 2rem;
 
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        flex-basis: 100%;
+        padding: 1.25rem 1rem 1rem;
+      }
+
       .box-text {
         font-size: 22px;
         line-height: 1.4;
 
+        @include media-breakpoint-down(md) {
+          font-size: 16px;
+        }
+
         .large {
           font-size: 50px;
+
+          @include media-breakpoint-down(md) {
+            font-size: 28px;
+          }
         }
 
         strong {
           display: inline-block;
           font-size: 28px;
+
+          @include media-breakpoint-down(md) {
+            font-size: 20px;
+          }
 
           .large {
             line-height: 0;
@@ -151,8 +207,16 @@ export default {
   .described-example {
     display: flex;
     justify-content: center;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin: 6rem 0;
+
+    &.described-example--reverse {
+      outline: 5px solid red;
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      margin: 2.5rem 0;
+    }
 
     .description-col {
       display: flex;
@@ -169,9 +233,21 @@ export default {
         top: -1.5rem;
         z-index: 1;
 
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          flex-basis: 100%;
+          padding: 1rem;
+          font-size: 20px;
+          top: 0;
+        }
+
         .large {
           font-size: 50px;
           line-height: 0;
+
+          @include media-breakpoint-down(md) {
+            font-size: 28px;
+          }
         }
       }
     }
@@ -179,14 +255,18 @@ export default {
     .example-col {
       .example {
         width: 740px;
-        // height: 400px;
         border: 12px solid var(--accent-color);
+
+        @include media-breakpoint-down(md) {
+          width: auto;
+          border-width: 6px;
+          margin: 0 calc(-1 * var(--page-gutter));
+        }
 
         img {
           display: block;
           width: 100%;
           height: auto;
-          // object-fit: cover;
         }
       }
 
@@ -195,13 +275,24 @@ export default {
         font-size: 18px;
         font-style: italic;
         font-weight: 500;
-        margin-top: 1rem;
+        margin-top: 1em;
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          font-size: 14px;
+        }
       }
     }
 
     .description-col + .example-col,
     .example-col + .description-col {
       margin-left: -3rem;
+      outline: 5px solid red;
+
+      @include media-breakpoint-down(md) {
+        margin-left: 0;
+        margin-top: -1.5rem;
+      }
     }
   }
 }

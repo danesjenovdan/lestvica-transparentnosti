@@ -127,7 +127,13 @@
         </div>
       </div>
     </div>
-    <div class="described-example">
+    <div class="described-example described-example--reverse">
+      <div class="description-col">
+        <div class="description">
+          Imena priponk z občinskimi datotekami uporabnikom pogosto ne
+          razkrivajo ničesar o njeni vsebini.
+        </div>
+      </div>
       <div class="example-col">
         <div class="example">
           <img src="~/assets/images/P1_S2.png" alt="" />
@@ -135,12 +141,6 @@
         <div class="caption">
           Gradiva za sejo občinskega sveta, objavljena v priponkah, katerih
           imena ne razkrivajo ničesar o njihovi vsebini.
-        </div>
-      </div>
-      <div class="description-col">
-        <div class="description">
-          Imena priponk z občinskimi datotekami uporabnikom pogosto ne
-          razkrivajo ničesar o njeni vsebini.
         </div>
       </div>
     </div>
@@ -161,7 +161,14 @@
         </div>
       </div>
     </div>
-    <div class="described-example">
+    <div class="described-example described-example--reverse">
+      <div class="description-col">
+        <div class="description">
+          Mnoge občine pomembne datoteke združijo v skupne mape, kar onemogoča
+          iskanje, hkrati pa jih morajo uporabniki pred prebiranjem prenesti na
+          svoj računalnik.
+        </div>
+      </div>
       <div class="example-col">
         <div class="example">
           <img src="~/assets/images/P1_S4.png" alt="" />
@@ -169,13 +176,6 @@
         <div class="caption">
           Gradiva za sejo občinskega sveta, združena v eno samo mapo, ki jo je
           treba pred pregledom prenesti na računalnik.
-        </div>
-      </div>
-      <div class="description-col">
-        <div class="description">
-          Mnoge občine pomembne datoteke združijo v skupne mape, kar onemogoča
-          iskanje, hkrati pa jih morajo uporabniki pred prebiranjem prenesti na
-          svoj računalnik.
         </div>
       </div>
     </div>

@@ -4,10 +4,12 @@ const OG_DESCRIPTION =
   'Preveri, ali tvoja občina omogoča informiranje o njenem delovanju in vplivanje na njene odločitve.';
 const OG_IMAGE = '';
 
+const BASE_PATH = '/les-trans-test/';
+
 export default {
   target: 'static',
   router: {
-    base: '/les-trans-test/',
+    base: BASE_PATH,
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -66,22 +68,22 @@ export default {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.ico',
+        href: `${BASE_PATH}/favicon.ico`,
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '32x32',
-        href: '/favicon-32x32.png',
+        href: `${BASE_PATH}/favicon-32x32.png`,
       },
       {
         rel: 'shortcut icon',
-        href: '/favicon-32x32.png',
+        href: `${BASE_PATH}/favicon-32x32.png`,
       },
       {
         rel: 'apple-touch-icon',
         sizes: '512x512',
-        href: '/favicon-512x512.png',
+        href: `${BASE_PATH}/favicon-512x512.png`,
       },
       // fonts
       {
@@ -95,7 +97,7 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Lexend:wght@300;600&display=swap',
       },
       {
         rel: 'stylesheet',

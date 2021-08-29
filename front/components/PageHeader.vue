@@ -34,6 +34,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/styles/breakpoints';
+
 header {
   border-bottom: 1px solid rgba(#fff, 0.3);
 
@@ -54,11 +56,20 @@ header {
         font-size: 28px;
         font-weight: 600;
         line-height: 1.4;
+
+        @include media-breakpoint-down(md) {
+          font-size: 16px;
+          font-weight: 300;
+        }
       }
 
       small {
         font-size: 16px;
         margin-left: 1px;
+
+        @include media-breakpoint-down(md) {
+          font-size: 12px;
+        }
       }
 
       a {
@@ -73,6 +84,12 @@ header {
           box-shadow: -0.2em 0 0 $hover-bg-color, 0.2em 0 0 $hover-bg-color;
         }
       }
+
+      .search-field {
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
     }
 
     .toc-col {
@@ -80,6 +97,10 @@ header {
       display: flex;
       justify-content: flex-end;
       align-items: center;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
     }
   }
 }

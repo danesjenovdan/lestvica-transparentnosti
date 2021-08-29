@@ -76,10 +76,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/styles/breakpoints';
+
 .text-col {
   flex: 4;
   padding: 7rem 0;
   color: #fff;
+
+  @include media-breakpoint-down(md) {
+    padding: 2rem 0;
+  }
 
   h1,
   h2 {
@@ -90,6 +96,10 @@ export default {
     color: var(--heading-color);
     margin-bottom: 1.2em;
 
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+    }
+
     em {
       font-style: italic;
       color: #ffc569;
@@ -98,6 +108,10 @@ export default {
 
   h2 {
     font-size: 32px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
+    }
   }
 
   p {
@@ -105,6 +119,11 @@ export default {
     font-weight: 500;
     line-height: 1.4;
     margin-bottom: 1.5em;
+
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+      font-weight: 300;
+    }
   }
 }
 

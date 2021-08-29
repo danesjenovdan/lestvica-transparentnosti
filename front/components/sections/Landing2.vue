@@ -218,6 +218,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/styles/breakpoints';
+
 .points-table {
   th,
   td {
@@ -231,6 +233,11 @@ export default {
   th {
     white-space: nowrap;
     min-width: 116px;
+
+    @include media-breakpoint-down(md) {
+      white-space: normal;
+      min-width: 0;
+    }
   }
 }
 </style>

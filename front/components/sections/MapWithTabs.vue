@@ -92,6 +92,8 @@ export default {
 
 <style lang="scss" scoped>
 .map-with-tabs {
+  display: none;
+
   .search-fields {
     display: flex;
     gap: 4rem;
