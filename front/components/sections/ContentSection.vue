@@ -210,7 +210,21 @@ export default {
     margin: 6rem 0;
 
     &.described-example--reverse {
-      outline: 5px solid red;
+      flex-direction: row-reverse;
+
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+      }
+
+      .description-col + .example-col {
+        margin-left: 0;
+        margin-right: -3rem;
+
+        @include media-breakpoint-down(md) {
+          margin-right: 0;
+          margin-top: -1.5rem;
+        }
+      }
     }
 
     @include media-breakpoint-down(md) {
@@ -284,10 +298,8 @@ export default {
       }
     }
 
-    .description-col + .example-col,
-    .example-col + .description-col {
+    .description-col + .example-col {
       margin-left: -3rem;
-      outline: 5px solid red;
 
       @include media-breakpoint-down(md) {
         margin-left: 0;

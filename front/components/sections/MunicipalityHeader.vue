@@ -84,33 +84,69 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/styles/breakpoints';
+
 .info-col {
-  padding: 5rem;
+  padding: 5rem 0;
   color: #fff;
+
+  @include media-breakpoint-down(md) {
+    padding: 3rem 0;
+  }
 
   .info-wrapper {
     padding-right: 6rem;
 
+    @include media-breakpoint-down(md) {
+      padding-right: 0;
+    }
+
+    .cols {
+      @include media-breakpoint-down(md) {
+        flex-direction: row;
+      }
+    }
+
     .title-col {
       flex: 1.5;
+
+      @include media-breakpoint-down(md) {
+        flex: 0 0 65%;
+      }
 
       h1 {
         font-size: 48px;
         font-weight: 500;
+
+        @include media-breakpoint-down(md) {
+          font-size: 24px;
+        }
       }
 
       .rank {
         font-size: 48px;
         font-weight: 700;
         font-style: italic;
-        margin-top: 1.5rem;
+        margin-top: 0.5em;
+
+        @include media-breakpoint-down(md) {
+          font-size: 24px;
+        }
       }
     }
 
     .icon-col {
+      @include media-breakpoint-down(md) {
+        flex: 0 0 35%;
+      }
+
       .gauge-wrapper {
         float: right;
         width: 150px;
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+        }
 
         .gauge-icon {
           .gauge {
@@ -137,6 +173,10 @@ export default {
     .scores {
       margin-top: 3rem;
 
+      @include media-breakpoint-down(md) {
+        margin-top: 2rem;
+      }
+
       .score-row {
         display: flex;
         justify-content: space-between;
@@ -144,6 +184,10 @@ export default {
         padding: 1rem 0.75rem 0.75rem;
         font-size: 22px;
         line-height: 1;
+
+        @include media-breakpoint-down(md) {
+          font-size: 14px;
+        }
 
         &:last-of-type {
           border-bottom: 1px solid rgba(#fff, 0.5);
@@ -156,6 +200,7 @@ export default {
         .score-value {
           font-weight: 900;
           flex-shrink: 0;
+          padding-left: 1em;
         }
       }
     }
@@ -167,6 +212,10 @@ export default {
       text-align: right;
       margin-top: 1rem;
       margin-right: 0.75rem;
+
+      @include media-breakpoint-down(md) {
+        font-size: 11px;
+      }
     }
   }
 }
@@ -174,6 +223,11 @@ export default {
 .map-col {
   .pan-zoom-container {
     background-color: #f1f1f1;
+
+    @include media-breakpoint-down(md) {
+      width: auto;
+      margin: 0 calc(-1 * var(--page-gutter));
+    }
   }
 }
 </style>

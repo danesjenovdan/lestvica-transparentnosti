@@ -10,7 +10,7 @@
       </p>
     </div>
     <div class="cols">
-      <div class="col">
+      <div class="col peer-list-col">
         <div class="peer-list">
           <div class="peer-list-header">
             <h3>PRIMERJAVA PO ŠTEVILU PREBIVALCEV</h3>
@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col peer-list-col">
         <div class="peer-list">
           <div class="peer-list-header">
             <h3>PRIMERJAVA PO VIŠINI PRORAČUNA</h3>
@@ -91,8 +91,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/styles/breakpoints';
+
 .cols {
   margin-top: 7rem;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 3rem;
+  }
+}
+
+.peer-list-col {
+  &:not(:last-child) {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 .peer-list {
@@ -104,11 +118,16 @@ export default {
     padding: 1.5rem 2rem;
     border-bottom: 1px solid #173d58;
 
+    @include media-breakpoint-down(md) {
+      padding: 1rem;
+    }
+
     h3 {
       color: #173d58;
       font-size: 20px;
       font-weight: 700;
       font-style: italic;
+      margin-top: 0;
       margin-bottom: 0.5rem;
     }
 
@@ -132,6 +151,10 @@ export default {
     max-height: 600px;
     overflow: hidden;
     overflow-y: scroll;
+
+    @include media-breakpoint-down(md) {
+      padding: 1rem;
+    }
 
     .peer-list-element {
       padding: 1rem 0.75rem 0.75rem 0.75rem;

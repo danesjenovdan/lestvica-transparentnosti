@@ -63,19 +63,34 @@ V upanju, da boste upoštevali predloge in izboljšali pogoje za participacijo t
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/styles/breakpoints';
+
 .title-col {
   flex: 1;
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 1rem;
+  }
 
   .mail-title {
     background-color: #21435c;
     padding: 3rem;
+
+    @include media-breakpoint-down(md) {
+      padding: 1.25rem 1rem;
+    }
 
     h3 {
       color: #fff;
       font-size: 48px;
       font-weight: 900;
       line-height: 1.2;
+      margin-top: 0;
       margin-bottom: 1em;
+
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+      }
     }
 
     h4 {
@@ -84,6 +99,11 @@ V upanju, da boste upoštevali predloge in izboljšali pogoje za participacijo t
       font-weight: 300;
       line-height: 1.2;
       margin-bottom: 1em;
+
+      @include media-breakpoint-down(md) {
+        font-size: 18px;
+        margin-bottom: 0;
+      }
 
       strong {
         font-weight: 500;
@@ -96,6 +116,7 @@ V upanju, da boste upoštevali predloge in izboljšali pogoje za participacijo t
   flex: 2;
 
   textarea {
+    display: block;
     width: 100%;
     height: 900px;
     border: 2px solid #21435c;
@@ -103,6 +124,12 @@ V upanju, da boste upoštevali predloge in izboljšali pogoje za participacijo t
     resize: none;
     font-size: 28px;
     font-weight: 300;
+
+    @include media-breakpoint-down(md) {
+      padding: 1rem;
+      font-size: 16px;
+      height: 300px;
+    }
 
     &:focus {
       outline: none;

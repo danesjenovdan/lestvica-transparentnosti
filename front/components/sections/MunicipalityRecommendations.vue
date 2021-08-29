@@ -57,10 +57,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/styles/breakpoints';
+
 .content-section {
   h2 {
     color: #173d58;
-    margin-bottom: 0.5em;
 
     em {
       color: #5aa996;
@@ -70,14 +71,30 @@ export default {
 
   p {
     font-size: 18px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+    }
   }
 }
 
 .recommendations {
   margin-top: 6rem;
 
+  @include media-breakpoint-down(md) {
+    margin-top: 3rem;
+  }
+
   .recommendation {
     margin-bottom: 5rem;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 2rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
 
     .number-col {
       flex: 0 0 100px;
@@ -86,6 +103,13 @@ export default {
       color: #ff7a40;
       text-align: right;
       margin-right: 2rem;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+        flex: 0 0 auto;
+        text-align: center;
+        font-size: 48px;
+      }
     }
 
     .text-col {
@@ -93,11 +117,16 @@ export default {
       p {
         font-size: 26px;
         line-height: 1.2;
+
+        @include media-breakpoint-down(md) {
+          font-size: 16px;
+        }
       }
 
       h3 {
         font-weight: 500;
-        margin-bottom: 1rem;
+        margin-top: 0;
+        margin-bottom: 0.5em;
       }
 
       p {
