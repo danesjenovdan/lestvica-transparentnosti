@@ -119,7 +119,7 @@ export default {
   button.toc-button {
     display: flex;
     align-items: center;
-    border: none;
+    border: 1px solid #173d58;
     background: #64bca7;
     padding: 0.5rem 1rem;
     font-size: 16px;

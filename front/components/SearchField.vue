@@ -10,7 +10,7 @@
       :search="search"
       :get-result-value="getResultValue"
       :default-value="''"
-      placeholder="Poišči občino"
+      :placeholder="placeholder != null ? placeholder : 'Poišči občino'"
       @submit="onSubmit"
     ></autocomplete>
     <button v-if="showButton" type="button" @click="onSubmit">
@@ -44,6 +44,14 @@ export default {
       type: Boolean,
       default: false,
     },
+    placeholder: {
+      type: String,
+      default: null,
+    },
+    onSelect: {
+      type: Function,
+      default: null,
+    },
   },
   computed: {
     ...mapState(['municipalitiesList', 'municipalityData']),
@@ -75,6 +83,10 @@ export default {
       if (!municipality) {
         return;
       }
+      if (this.onSelect) {
+        this.onSelect(municipality);
+        return;
+      }
       this.$router.push(`/obcina/${municipality.id}/`);
     },
   },
@@ -88,6 +100,7 @@ export default {
   width: 250px;
   position: relative;
   text-align: left;
+  z-index: 10;
 
   &.search-field--large {
     width: 450px;
@@ -148,7 +161,7 @@ export default {
     max-height: 300px;
     overflow-y: auto;
     background-color: #fff;
-    border-width: 0 1px 1px 1px;
+    border: 1px solid #fff;
 
     .autocomplete-result {
       cursor: default;
@@ -184,6 +197,10 @@ export default {
     &::placeholder {
       color: #000;
     }
+  }
+
+  .autocomplete-result-list {
+    border-color: #173d58;
   }
 }
 </style>

@@ -28,7 +28,7 @@
                 class="score-row"
               >
                 <div class="score-label">
-                  {{ key }}
+                  {{ groupName(key) }}
                 </div>
                 <div class="score-value">{{ group.score }} / 20</div>
               </div>
@@ -55,6 +55,7 @@
 
 <script>
 import { mapState } from 'vuex';
+import { GROUP_NAMES } from '~/utils/constants';
 import BackgroundSection from '~/components/sections/BackgroundSection.vue';
 import PanZoom from '~/components/PanZoom.vue';
 import Gauge from '~/components/Gauge.vue';
@@ -78,6 +79,9 @@ export default {
   methods: {
     onPanZoomReady(panZoom) {
       this.panZoom = panZoom;
+    },
+    groupName(key) {
+      return GROUP_NAMES[key]?.name || key;
     },
   },
 };
