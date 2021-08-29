@@ -1,5 +1,8 @@
 <template>
-  <content-section variant="blue">
+  <content-section
+    id="vkljucenost-v-delovanje-obcine-in-obvescanje"
+    variant="blue"
+  >
     <!-- (6) Ali so občani vključeni v delovanje občine in o tem ustrezno obveščeni -->
     <div class="narrow">
       <h2>
@@ -94,7 +97,7 @@
       </p>
     </div>
 
-    <div class="boxes">
+    <div class="boxes boxes-2col">
       <div class="box">
         <div class="box-text">
           <strong>

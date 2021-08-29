@@ -1,5 +1,5 @@
 <template>
-  <content-section variant="dark-blue">
+  <content-section id="kako-se-je-odrezala-tvoja-obcina" variant="dark-blue">
     <div class="narrow center">
       <h2>TE ZANIMA, KAKO SE JE ODREZALA <em>TVOJA OBČINA</em>?</h2>
       <div>

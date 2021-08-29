@@ -1,5 +1,5 @@
 <template>
-  <div v-click-outside="() => (open = false)">
+  <div v-click-outside="() => (open = false)" class="toc-button-wrapper">
     <button class="toc-button" type="button" @click.prevent="open = !open">
       <div class="text">KAZALO</div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="5.7 2.5 88.6 95">
@@ -15,59 +15,71 @@
       <nav v-if="open" class="toc">
         <ul>
           <li>
-            <a href="#">
+            <a href="#uvod" @click="onLinkClick">
               <em>UVOD</em>
               Ali je delovanje slovenskih občin na spletu odprto in
               transparentno?
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="#lestvica-odprtosti-in-transparentnosti"
+              @click="onLinkClick"
+            >
               <em>LESTVICA ODPRTOSTI IN TRANSPARENTNOSTI</em>
               Preveri, kako so se odrezale posamezne občine.
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#kaj-je-pokazala-raziskava" @click="onLinkClick">
               <em>KAJ JE POKAZALA RAZISKAVA?</em>
               Poglej širšo sliko stanja odprtosti in transparentnosti lokalne
               samouprave.
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="#transparentnost-delovanja-obcinskega-sveta"
+              @click="onLinkClick"
+            >
               <em>TRANSPARENTNOST DELOVANJA OBČINSKEGA SVETA</em>
               Koliko zares izvem o delovanju občinskega sveta?
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#preglednost-in-dostop-do-informacij" @click="onLinkClick">
               <em>PREGLEDNOST IN DOSTOP DO INFORMACIJ</em>
               Ali so občinski podatki na spletnem mestu razumljivo prikazani?
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="#transparentnost-in-vkljucenost-v-sprejemanje-proracuna"
+              @click="onLinkClick"
+            >
               <em>TRANSPARENTNOST IN VKLJUČENOST V SPREJEMANJE PRORAČUNA</em>
               Ali lahko sodelujem v postopku sprejemanja proračuna?
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#dostopnost-spletnega-mesta" @click="onLinkClick">
               <em>DOSTOPNOST SPLETNEGA MESTA</em>
               Ali so informacije na spletnem mestu na voljo vsem občankam in
               občanom?
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="#vkljucenost-v-delovanje-obcine-in-obvescanje"
+              @click="onLinkClick"
+            >
               <em>VKLJUČENOST V DELOVANJE OBČINE IN OBVEŠČANJE</em>
               V katerih občinskih procesih lahko sodelujem in koliko o tem
               izvem?
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#kako-se-je-odrezala-tvoja-obcina" @click="onLinkClick">
               <em>KAKO SE JE ODREZALA TVOJA OBČINA?</em>
               Preveri, koliko točk je dosegla tvoja občina, in jo primerjaj z
               ostalimi.
@@ -91,78 +103,88 @@ export default {
       open: false,
     };
   },
+  methods: {
+    onLinkClick() {
+      this.open = false;
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-button.toc-button {
-  display: flex;
-  align-items: center;
-  border: none;
-  background: #64bca7;
-  padding: 0.5rem 1rem;
-  font-size: 16px;
-  font-weight: 500;
-  color: #173d58;
+.toc-button-wrapper {
+  position: fixed;
+  z-index: 1000;
 
-  &:hover,
-  &:focus {
-    background-color: #a9d8ce;
+  button.toc-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: #64bca7;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: #173d58;
+
+    &:hover,
+    &:focus {
+      background-color: #a9d8ce;
+    }
+
+    .text {
+      margin-top: 0.2em;
+      color: #000;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      margin-left: 1rem;
+    }
   }
 
-  .text {
-    margin-top: 0.2em;
-    color: #000;
-  }
+  .toc-wrapper {
+    position: relative;
 
-  svg {
-    width: 24px;
-    height: 24px;
-    margin-left: 1rem;
-  }
-}
+    nav.toc {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #a9d8ce;
+      padding: 2rem 3rem;
+      width: 500px;
 
-.toc-wrapper {
-  position: relative;
-
-  nav.toc {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: #a9d8ce;
-    padding: 2rem 3rem;
-    width: 500px;
-
-    ul {
-      &,
-      li {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      li {
-        &:not(:last-child) {
-          margin-bottom: 1rem;
-          padding-bottom: 1rem;
-          border-bottom: 1px solid #000;
+      ul {
+        &,
+        li {
+          list-style: none;
+          margin: 0;
+          padding: 0;
         }
 
-        a {
-          display: block;
-          color: #000;
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 1.4;
-          text-decoration: none;
+        li {
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #000;
+          }
 
-          em {
+          a {
             display: block;
-            font-size: 20px;
-            font-weight: 900;
-            font-style: italic;
-            line-height: 1.2;
+            color: #000;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.4;
+            text-decoration: none;
+
+            em {
+              display: block;
+              font-size: 20px;
+              font-weight: 900;
+              font-style: italic;
+              line-height: 1.2;
+            }
           }
         }
       }

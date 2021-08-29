@@ -1,5 +1,5 @@
 <template>
-  <background-section variant="dark-blue">
+  <background-section id="uvod" variant="dark-blue">
     <div class="container">
       <div class="cols">
         <div class="col text-col">

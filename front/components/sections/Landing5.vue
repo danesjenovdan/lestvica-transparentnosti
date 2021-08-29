@@ -1,5 +1,5 @@
 <template>
-  <content-section variant="yellow">
+  <content-section id="dostopnost-spletnega-mesta" variant="yellow">
     <!-- (5) Ali so spletna mesta dostopna vsem občanom -->
     <div class="narrow">
       <h2>Ali so spletna mesta dostopna vsem občanom?</h2>

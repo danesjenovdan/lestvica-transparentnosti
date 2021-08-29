@@ -1,5 +1,8 @@
 <template>
-  <content-section variant="green">
+  <content-section
+    id="transparentnost-in-vkljucenost-v-sprejemanje-proracuna"
+    variant="green"
+  >
     <!-- (4) Ali lahko občani sodelujejo v postopku sprejemanja proračuna -->
     <div class="narrow">
       <h2>Ali lahko občani sodelujejo v postopku sprejemanja proračuna?</h2>

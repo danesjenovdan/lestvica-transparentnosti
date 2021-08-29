@@ -1,5 +1,5 @@
 <template>
-  <background-section>
+  <background-section id="lestvica-odprtosti-in-transparentnosti">
     <div class="map-with-tabs">
       <div class="search-fields">
         <search-field dark />

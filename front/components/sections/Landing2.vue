@@ -1,5 +1,5 @@
 <template>
-  <content-section variant="blue">
+  <content-section id="preglednost-in-dostop-do-informacij" variant="blue">
     <!-- (2) Ali občani lahko nadzirajo delovanje občinskega sveta -->
     <div class="narrow">
       <h2>Ali lahko občani spremljajo delo občinskega sveta?</h2>

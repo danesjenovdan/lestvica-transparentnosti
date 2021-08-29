@@ -1,5 +1,5 @@
 <template>
-  <content-section variant="green">
+  <content-section id="kaj-je-pokazala-raziskava" variant="green">
     <!-- (0) Kaj je pokazala raziskava odprtosti in transparentnosti slovenskih občin -->
     <div class="narrow">
       <h2>

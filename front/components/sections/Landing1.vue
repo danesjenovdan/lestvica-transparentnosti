@@ -1,5 +1,8 @@
 <template>
-  <content-section variant="yellow">
+  <content-section
+    id="transparentnost-delovanja-obcinskega-sveta"
+    variant="yellow"
+  >
     <!-- (1) Ali občine sledijo standardom odprtosti in transparentnosti -->
     <div class="narrow">
       <h2>

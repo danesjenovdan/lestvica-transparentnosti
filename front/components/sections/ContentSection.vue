@@ -150,10 +150,17 @@ export default {
     display: flex;
     gap: 2rem;
     justify-content: center;
-    margin: 6rem 0;
+    margin: 6rem auto;
+    flex-wrap: wrap;
+    max-width: 1300px;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &.boxes-2col {
+      flex-wrap: wrap;
+      max-width: 850px;
     }
 
     @include media-breakpoint-down(md) {
