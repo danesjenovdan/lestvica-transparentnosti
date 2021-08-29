@@ -18,9 +18,9 @@ export default {
       type: Object,
       default: null,
     },
-    highlightMunicipality: {
-      type: Boolean,
-      default: false,
+    highlightMunicipalities: {
+      type: Array,
+      default: null,
     },
     getBucket: {
       type: Function,
@@ -41,6 +41,12 @@ export default {
     panZoom() {
       this.setInitialTransform();
     },
+    highlightMunicipalities() {
+      this.resetTransform();
+      this.$nextTick(() => {
+        this.colorizeMunicipalities();
+      });
+    },
     getBucket() {
       this.colorizeMunicipalities();
     },
@@ -54,49 +60,76 @@ export default {
         this.panZoom.setTransform(this.initialPoint, this.initialScale);
       }
     },
+    resetTransform() {
+      this.initialPoint = { x: 0, y: 0 };
+      this.initialScale = 1;
+      this.setInitialTransform();
+    },
     colorizeMunicipalities() {
-      let currentEl = null;
-      const svgEl = this.$refs.svg.$el;
+      const svgElement = this.$refs.svg.$el;
+      const names = (
+        this.highlightMunicipalities != null
+          ? this.highlightMunicipalities
+          : this.municipalityData
+          ? [this.municipalityData]
+          : []
+      ).map((o) => o.name.replace(' - ', '-'));
+      const elements = [];
+
       this.municipalitiesList.forEach((o) => {
         const name = o.name.replace(' - ', '-');
-        const el = svgEl.querySelector(`[data-name="${name}"]`);
-        if (!el) {
-          // eslint-disable-next-line no-console
-          console.error('Missing SVG map element:', o.name);
-        } else {
+        const element = svgElement.querySelector(`[data-name="${name}"]`);
+        if (element) {
           const getBucket = this.getBucket || ((o) => o.total_bucket);
-          console.log(getBucket(o));
-          el.style.fill = BUCKET_COLORS[getBucket(o)] || 'red';
-          if (
-            this.highlightMunicipality &&
-            this.municipalityData.name === name
-          ) {
-            el.style.stroke = '#ff7a40';
-            currentEl = el;
+          element.style.fill = BUCKET_COLORS[getBucket(o)] || 'red';
+          if (names.includes(name)) {
+            element.style.stroke = '#ff7a40';
+            elements.push(element);
+          } else {
+            element.style.stroke = '';
           }
         }
       });
-      if (!this.highlightMunicipality) {
-        this.initialized = true;
-        this.setInitialTransform();
-      } else if (currentEl) {
-        // move to front, by inserting it as a last child in the parent
-        currentEl.parentElement.appendChild(currentEl);
 
-        // center and scale
-        const elRect = currentEl.getBoundingClientRect();
-        const container = svgEl.parentElement.parentElement;
-        const contRect = container.getBoundingClientRect();
-        const scale = Math.min(5, 1 / ((elRect.width * 1.5) / contRect.width));
-        const centX = contRect.x + contRect.width / 2;
-        const centY = contRect.y + contRect.height / 2;
-        const offX = (centX - elRect.x - elRect.width / 2) * scale;
-        const offY = (centY - elRect.y - elRect.height / 2) * scale;
+      if (elements.length) {
+        let xMin = Infinity;
+        let yMin = Infinity;
+        let xMax = -Infinity;
+        let yMax = -Infinity;
+
+        elements.forEach((element) => {
+          // move to front, by inserting it as a last child in the parent
+          element.parentElement.appendChild(element);
+
+          // center and scale
+          const elementRect = element.getBoundingClientRect();
+          xMin = Math.min(xMin, elementRect.x);
+          yMin = Math.min(yMin, elementRect.y);
+          xMax = Math.max(xMax, elementRect.x + elementRect.width);
+          yMax = Math.max(yMax, elementRect.y + elementRect.height);
+        });
+
+        const container = svgElement.parentElement.parentElement;
+        const containerRect = container.getBoundingClientRect();
+
+        const width = xMax - xMin;
+        const height = yMax - yMin;
+        const size = Math.max(
+          width / containerRect.width,
+          height / containerRect.height
+        );
+        const scale = 1 / (size * 1.25);
+
+        const centX = containerRect.x + containerRect.width / 2;
+        const centY = containerRect.y + containerRect.height / 2;
+        const offX = (centX - xMin - width / 2) * scale;
+        const offY = (centY - yMin - height / 2) * scale;
         this.initialPoint = { x: offX, y: offY };
         this.initialScale = scale;
-        this.initialized = true;
-        this.setInitialTransform();
       }
+
+      this.initialized = true;
+      this.setInitialTransform();
     },
   },
 };

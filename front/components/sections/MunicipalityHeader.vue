@@ -44,7 +44,7 @@
         <div class="col map-col">
           <client-only>
             <pan-zoom @ready="onPanZoomReady">
-              <municipalities-map :pan-zoom="panZoom" highlight-municipality />
+              <municipalities-map :pan-zoom="panZoom" />
             </pan-zoom>
           </client-only>
         </div>

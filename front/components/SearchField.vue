@@ -48,6 +48,10 @@ export default {
       type: String,
       default: null,
     },
+    onClear: {
+      type: Function,
+      default: null,
+    },
     onSelect: {
       type: Function,
       default: null,
@@ -63,6 +67,9 @@ export default {
   },
   methods: {
     search(input) {
+      if (!input?.length && this.onClear) {
+        this.onClear();
+      }
       if (input.length < 2) {
         return [];
       }
