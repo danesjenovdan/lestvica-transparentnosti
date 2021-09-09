@@ -20,8 +20,8 @@
         zastopanju interesov določenega dela občank in občanov. Ugotovili smo,
         da
         <span class="highlighted">
-          kar 93 % občin ne objavlja podatkov o glasovanju posameznih svetnic in
-          svetnikov </span
+          kar <span class="large">93</span>&nbsp;% občin ne objavlja podatkov o
+          glasovanju posameznih svetnic in svetnikov</span
         >, kar pomeni, da javnosti ne omogočajo nikakršnega mehanizma nadzora
         nad izvoljenimi predstavniki. Ob manku temeljitih evidenc vseh glasovanj
         je prav tako težko predvideti, kakšne odločitve bodo svetnice in
@@ -33,8 +33,8 @@
       <div class="box">
         <div class="box-text">
           <strong>
-            44 % občin na svojih spletnih mestih ne navaja strankarske
-            pripadnosti svetnic in svetnikov.
+            <span class="large">44</span>&nbsp;% občin na svojih spletnih mestih
+            ne navaja strankarske pripadnosti svetnic in svetnikov.
           </strong>
           Informacije o strankarski pripadnosti so namreč pomembne zaradi
           informiranja občanov o izvoljenih predstavnikih in zagotavljanja
@@ -44,8 +44,9 @@
       <div class="box">
         <div class="box-text">
           <strong>
-            96 % občin na spletnih mestih ne objavlja življenjepisa oziroma
-            drugih relevantnih podatkov o občinskih svetnicah in svetnikih,
+            <span class="large">96</span>&nbsp;% občin na spletnih mestih ne
+            objavlja življenjepisa oziroma drugih relevantnih podatkov o
+            občinskih svetnicah in svetnikih,
           </strong>
           kar onemogoča prepoznavanje njihovih kompetenc ali morebitnih
           konfliktov interesov.
@@ -54,8 +55,9 @@
       <div class="box">
         <div class="box-text">
           <strong>
-            71 % občin na spletnih mestih nima objavljenih nikakršnih kontaktnih
-            podatkov občinskih svetnic in svetnikov,
+            <span class="large">71</span>&nbsp;% občin na spletnih mestih nima
+            objavljenih nikakršnih kontaktnih podatkov občinskih svetnic in
+            svetnikov,
           </strong>
           tako da se na njih na preprost in vsem dostopen način ni mogoče
           obrniti niti z najenostavnejšimi vprašanji.

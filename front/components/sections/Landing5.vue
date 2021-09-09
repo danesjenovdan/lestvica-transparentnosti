@@ -70,15 +70,19 @@
         saj ta zagotavlja lažje razlikovanje med različnimi deli spletnega
         mesta. Ugotovili smo, da
         <span class="highlighted">
-          primeren barvni kontrast uporablja zgolj 36 % občinskih spletnih mest </span
+          primeren barvni kontrast uporablja zgolj
+          <span class="large">36</span>&nbsp;% občinskih spletnih mest</span
         >. Poleg tega morajo spletna mesta omogočati tudi berljivost vsebin ob
         uporabi brskalniške nastavitve za povečavo, kar koristi predvsem
         slabovidnim, a
-        <span class="highlighted">tega ne podpira 13 % spletnih mest</span>.
+        <span class="highlighted"
+          >tega ne podpira <span class="large">13</span>&nbsp;% spletnih
+          mest</span
+        >.
       </p>
     </div>
 
-    <div class="described-example">
+    <div class="described-example described-example--wide">
       <!-- <div class="description-col">
           <div class="description"></div>
         </div> -->
@@ -103,13 +107,14 @@
         pomembno pri zahtevnejših navigacijskih elementih, kot je denimo spustni
         meni.
         <span class="highlighted"
-          >Žal kar 84 % menijev občinskih spletnih mest ni dostopnih na
-          klik</span
+          >Žal kar <span class="large">84</span>&nbsp;% menijev občinskih
+          spletnih mest ni dostopnih na klik</span
         >, kar izjemno oteži rabo tistim, ki s težavo uporabljajo miško. Občine
         se bolje odrežejo pri navigiranju po spletnem mestu z rabo tipkovnice, a
         še vedno kar
         <span class="highlighted"
-          >30,7 % spletnih mest ne omogoča takšnega brskanja</span
+          ><span class="large">30,7</span>&nbsp;% spletnih mest ne omogoča
+          takšnega brskanja</span
         >.
       </p>
       <!-- </div> -->
@@ -142,8 +147,9 @@
 
       <p>
         <span class="highlighted">
-          Vse te elemente uporablja zgolj 8,5 % občinskih spletnih mest, 2,8 %
-          pa ne uporablja niti enega od njih.
+          Vse te elemente uporablja zgolj <span class="large">8,5</span>&nbsp;%
+          občinskih spletnih mest, <span class="large">2,8</span>&nbsp;% pa ne
+          uporablja niti enega od njih.
         </span>
         Največjo težavo občinam povzroča raba lastnosti alt, ki od
         administratorjev spletnega mesta zahteva tekstovni opis vsake slikovne
@@ -151,7 +157,7 @@
       </p>
     </div>
 
-    <div class="described-example">
+    <div class="described-example described-example--wide">
       <!-- <div class="description-col">
           <div class="description"></div>
         </div> -->
@@ -172,16 +178,18 @@
         informacij, ki med drugim vključuje jasna poimenovanja podstrani,
         povezav in dokumentov. V analizi smo ugotovili, da se
         <span class="highlighted">
-          zgolj 27,4 % občin poslužuje razumljivih poimenovanj </span
+          zgolj <span class="large">27,4</span>&nbsp;% občin poslužuje
+          razumljivih poimenovanj</span
         >, največjo težavo pa predstavljajo
         <span class="highlighted">
-          poimenovanja dokumentov, saj so ti v kar 65,6 % občin naslovljeni
-          nerazumljivo </span
+          poimenovanja dokumentov, saj so ti v kar
+          <span class="large">65,6</span>&nbsp;% občin naslovljeni
+          nerazumljivo</span
         >.
       </p>
-    </div>
+      <!-- </div> -->
 
-    <!-- <div class="described-example">
+      <!-- <div class="described-example">
         <div class="description-col">
           <div class="description"></div>
         </div>
@@ -193,7 +201,7 @@
         </div>
       </div> -->
 
-    <div class="narrow">
+      <!-- <div class="narrow"> -->
       <p>
         Pri oblikovanju vprašalnika za ocenjevanje dostopnosti spletnih mest
         slovenskih občin smo izhajali iz priporočil organizacije World Wide Web

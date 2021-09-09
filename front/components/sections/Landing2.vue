@@ -36,7 +36,7 @@
         sprejetimi odločitvami seznaniti čim prej po seji.
         <span class="highlighted">
           <span class="large">77</span> občin občankam in občanom spremljanje
-          sej omogoča z avdio ali video posnetkom </span
+          sej omogoča z avdio ali video posnetkom</span
         >, in sicer v živo ali pa naknadno na spletu. To je sicer dober način
         informiranja o delu občinskega sveta, a kljub temu ne more nadomestiti
         transkriptov in dobrih zapisnikov, saj je po teh relevantne informacije
@@ -69,7 +69,8 @@
         izsledki naše raziskave kažejo, da
         <span class="highlighted">
           kar
-          <span class="large">61</span>&nbsp;% občin pripravlja slabe zapisnike </span
+          <span class="large">61</span>&nbsp;% občin pripravlja slabe
+          zapisnike</span
         >, ki nenatančno povzemajo razprave sej občinskih svetov, na spletnih
         mestih
         <span class="highlighted"><span class="large">9</span></span> občin pa
@@ -77,7 +78,7 @@
       </p>
     </div>
 
-    <div class="described-example">
+    <div class="described-example described-example--wide">
       <!-- <div class="description-col">
           <div class="description"></div>
         </div> -->
@@ -109,7 +110,7 @@
         Čeprav je pohvalno, da
         <span class="highlighted">
           kar <span class="large">89</span>&nbsp;% občin objavlja, kateri
-          svetniki so člani katerih delovnih teles </span
+          svetniki so člani katerih delovnih teles</span
         >, pa je to pogosto tudi edini poizkus transparentnosti na tem področju.
         Poleg informacije o članstvu pa smo transparentnost delovanja delovnih
         teles ocenjevali s šestimi indikatorji, s katerimi smo preverjali, če so
@@ -119,13 +120,13 @@
         glasovanj.
         <span class="highlighted">
           Kar neverjetnih <span class="large">147</span> občin v tem sklopu ni
-          doseglo niti ene same točke </span
+          doseglo niti ene same točke</span
         >, kar pomeni, da občankam in občanom ne ponudijo niti kančka vpogleda v
         postopek sprejemanja odločitev na ključnih področjih svojega delovanja.
       </p>
     </div>
 
-    <div class="described-example">
+    <div class="described-example described-example--wide">
       <!-- <div class="description-col">
           <div class="description"></div>
         </div> -->

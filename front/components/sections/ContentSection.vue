@@ -216,6 +216,11 @@ export default {
     justify-content: center;
     margin: 6rem 0;
 
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      margin: 2.5rem 0;
+    }
+
     &.described-example--reverse {
       flex-direction: row-reverse;
 
@@ -234,9 +239,12 @@ export default {
       }
     }
 
-    @include media-breakpoint-down(md) {
-      flex-direction: column;
-      margin: 2.5rem 0;
+    &.described-example--wide {
+      .example-col {
+        .example {
+          width: 900px;
+        }
+      }
     }
 
     .description-col {
@@ -279,7 +287,7 @@ export default {
         border: 12px solid var(--accent-color);
 
         @include media-breakpoint-down(md) {
-          width: auto;
+          width: auto !important;
           border-width: 6px;
           margin: 0 calc(-1 * var(--page-gutter));
         }

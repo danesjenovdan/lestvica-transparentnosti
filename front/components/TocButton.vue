@@ -148,11 +148,12 @@ export default {
 
     nav.toc {
       position: absolute;
-      top: 0;
+      top: -1px;
       right: 0;
       z-index: 1000;
       background-color: #a9d8ce;
-      padding: 2rem 3rem;
+      border: 1px solid #173d58;
+      padding: 2rem;
       width: 500px;
 
       ul {
@@ -173,14 +174,14 @@ export default {
           a {
             display: block;
             color: #000;
-            font-size: 16px;
-            font-weight: 500;
+            font-size: 15px;
+            font-weight: 300;
             line-height: 1.4;
             text-decoration: none;
 
             em {
               display: block;
-              font-size: 20px;
+              font-size: 16px;
               font-weight: 900;
               font-style: italic;
               line-height: 1.2;

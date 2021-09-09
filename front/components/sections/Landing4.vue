@@ -24,16 +24,19 @@
       <p>
         Vendar pa raziskava kaže, da
         <span class="highlighted">
-          kar 55 občin proračuna za leto 2020 ni sprejelo v zakonsko določenem,
-          temveč šele po tromesečnem roku začasnega financiranja
-        </span>
+          kar <span class="large">55</span> občin proračuna za leto 2020 ni
+          sprejelo v zakonsko določenem, temveč šele po trimesečnem roku
+          začasnega financiranja</span
+        >
         (do konca marca 2020),
         <span class="highlighted">
-          6 občin pa je s sprejemanjem zamudilo tudi ta datum </span
-        >, torej so delovale protizakonito. Poleg tega
+          <span class="large">6</span> občin pa je s sprejemanjem zamudilo tudi
+          ta datum</span
+        >, torej so delovale protizakonito. Poleg tega je
         <span class="highlighted">
-          7 občin proračun sprejema samo z enim branjem, nekaj občin pa obe
-          branji izvede v istem dnevu na isti seji </span
+          <span class="large">7</span> občin proračun za leto 2020 sprejelo samo
+          z enim branjem, nekaj občin pa je obe branji izvedlo v istem dnevu na
+          isti seji</span
         >. Zamikanje sprejetja proračuna posega v možnost občanov za ustrezno
         informiranje ali sodelovanje v tem postopku, sprejemanje z enim branjem
         oziroma dvema branjema na isti seji pa jim močno krni priložnost, da se
@@ -54,15 +57,17 @@
       <div class="box">
         <div class="box-text">
           <strong>
-            115 občin je za proračun za leto 2020 organiziralo javno razpravo in
-            vabilo objavilo na svojem spletnem mestu.
+            <span class="large">115</span> občin je za proračun za leto 2020
+            organiziralo javno razpravo in vabilo objavilo na svojem spletnem
+            mestu.
           </strong>
         </div>
       </div>
       <div class="box">
         <div class="box-text">
           <strong>
-            53 občin je rezultate razprave delilo na svojem spletnem mestu.
+            <span class="large">53</span> občin je rezultate razprave delilo na
+            svojem spletnem mestu.
           </strong>
         </div>
       </div>
@@ -73,13 +78,13 @@
         Ker pa so proračuni več sto strani dolgi, tehnično zapleteni dokumenti,
         je pomembno tudi, v kakšni obliki so objavljeni. Tako na primer
         <span class="highlighted">
-          75 % občin omogoča iskanje po proračunu, ostale pa objavijo zgolj
-          skeniran dokument PDF </span
+          <span class="large">75</span>&nbsp;% občin omogoča iskanje po
+          proračunu, ostale pa objavijo zgolj skeniran dokument PDF</span
         >, v katerem je podatke precej težje odkriti.
       </p>
     </div>
 
-    <div class="described-example">
+    <div class="described-example described-example--wide">
       <!-- <div class="description-col">
           <div class="description"></div>
         </div> -->
@@ -102,8 +107,9 @@
         občine svoje proračune in poročila o porabi javnega denarja objaviti v
         razumljivejši obliki. Ugotovili smo, da
         <span class="highlighted">
-          je proračun za leto 2020 na uporabniku prijazen način prikazalo le 5
-          občin, 3 pa so poskusile bolj preprosto prikazati porabo sredstev </span
+          je proračun za leto 2020 na uporabniku prijazen način prikazalo le
+          <span class="large">5</span> občin, <span class="large">3</span> pa so
+          poskusile bolj preprosto prikazati porabo sredstev</span
         >.
       </p>
 
@@ -113,7 +119,8 @@
         mora župan po zakonu predstaviti občinskemu svetu. A v analizi smo
         ugotovili, da je
         <span class="highlighted">
-          le 60 % občin to poročilo objavilo na svojem spletnem mestu
+          le <span class="large">60</span>&nbsp;% občin to poročilo objavilo na
+          svojem spletnem mestu
         </span>
         ter tako vpogled omogočilo tudi zainteresiranim občankam in občanom.
       </p>

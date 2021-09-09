@@ -40,8 +40,8 @@
             hiperpovezav ali pa na voljo le v več sto strani dolgih in
             zapletenih dokumentih.
             <strong>
-              Kar 95 % občin pri pregledu vsebin ni doseglo niti polovice od 100
-              možnih točk</strong
+              Kar 95&nbsp;% občin pri pregledu vsebin ni doseglo niti polovice
+              od 100 možnih točk</strong
             >, tudi najvišje ocenjena občina pa je dosegla le 67,2 točke. Občine
             tako v veliki meri ne omogočajo ustrezne participacije ali
             informiranja občank in občanov.

@@ -22,7 +22,8 @@
         participativnega proračuna, ki omogoča neposredno podajanje predlogov
         posamičnih manjših projektov ter reprezentativno izražanje volje o njih.
         <span class="highlighted">
-          Participativni proračun je v letu 2020 izvedlo 12 slovenskih občin.
+          Participativni proračun je v letu 2020 izvedlo
+          <span class="large">12</span> slovenskih občin.
         </span>
       </p>
 
@@ -32,7 +33,8 @@
         poslali vprašalnik. V 4 mesecih, kolikor je bil vprašalnik občinskim
         predstavnikom dostopen, nam je podatke posredovalo zgolj 50 občin, torej
         <span class="highlighted">
-          več kot 76 % občin na naše elektronsko sporočilo ni odgovorilo </span
+          več kot <span class="large">76</span>&nbsp;% občin na naše elektronsko
+          sporočilo ni odgovorilo</span
         >. Ta podatek sam po sebi pove dovolj o stanju odprtosti lokalne
         samouprave v Sloveniji.
       </p>
@@ -48,7 +50,8 @@
       <div class="box">
         <div class="box-text">
           <strong>
-            23 % občin izvaja samo zakonsko določena posvetovanja
+            <span class="large">23</span>&nbsp;% občin izvaja samo zakonsko
+            določena posvetovanja
           </strong>
           (torej ob sprejemanju pomembnejših odlokov, kot sta proračun ali
           občinski prostorski načrt).
@@ -57,8 +60,8 @@
       <div class="box">
         <div class="box-text">
           <strong>
-            Le 16 % občin komentarje ter predloge občank in občanov objavi na
-            spletu.
+            Le <span class="large">16</span>&nbsp;% občin komentarje ter
+            predloge občank in občanov objavi na spletu.
           </strong>
         </div>
       </div>
@@ -77,15 +80,16 @@
       <div class="box">
         <div class="box-text">
           <strong>
-            75 % občin občankam in občanom omogoča, da svoje predloge oddajo na
-            spletu.
+            <span class="large">75</span>&nbsp;% občin občankam in občanom
+            omogoča, da svoje predloge oddajo na spletu.
           </strong>
         </div>
       </div>
       <div class="box">
         <div class="box-text">
           <strong>
-            9 % občin predloge in odgovore objavi na spletnem mestu.
+            <span class="large">9</span>&nbsp;% občin predloge in odgovore
+            objavi na spletnem mestu.
           </strong>
         </div>
       </div>
@@ -102,32 +106,33 @@
       <div class="box">
         <div class="box-text">
           <strong>
-            22 % ne uporablja družbenih omrežij za obveščanje o svojih
-            participativnih procesih.
+            <span class="large">22</span>&nbsp;% ne uporablja družbenih omrežij
+            za obveščanje o svojih participativnih procesih.
           </strong>
         </div>
       </div>
       <div class="box">
         <div class="box-text">
           <strong>
-            29 % o svojih participativnih procesih ne komunicira niti na lastnem
-            spletnem mestu.
+            <span class="large">29</span>&nbsp;% o svojih participativnih
+            procesih ne komunicira niti na lastnem spletnem mestu.
           </strong>
         </div>
       </div>
       <div class="box">
         <div class="box-text">
           <strong>
-            43 % občank in občanov o participativnih procesih ne obvešča s
-            pomočjo oglasne deske..
+            <span class="large">43</span>&nbsp;% občank in občanov o
+            participativnih procesih ne obvešča s pomočjo oglasne deske..
           </strong>
         </div>
       </div>
       <div class="box">
         <div class="box-text">
           <strong>
-            67 % ne uporablja spletnega novičnika za obveščanje občank in
-            občanov o participativnih procesih.
+            <span class="large">67</span>&nbsp;% ne uporablja spletnega
+            novičnika za obveščanje občank in občanov o participativnih
+            procesih.
           </strong>
         </div>
       </div>
