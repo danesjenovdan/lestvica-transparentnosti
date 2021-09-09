@@ -52,9 +52,6 @@ header {
       small {
         margin: 0;
         color: #fff;
-        font-family: 'Lexend', sans-serif;
-        font-size: 28px;
-        font-weight: 600;
         line-height: 1.4;
 
         @include media-breakpoint-down(md) {
@@ -63,9 +60,16 @@ header {
         }
       }
 
+      h1 {
+        font-family: 'Lexend', sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+      }
+
       small {
-        font-size: 16px;
+        font-size: 18px;
         margin-left: 1px;
+        font-weight: 300;
 
         @include media-breakpoint-down(md) {
           font-size: 12px;

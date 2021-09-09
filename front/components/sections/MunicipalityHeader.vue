@@ -78,6 +78,7 @@ export default {
   },
   methods: {
     onPanZoomReady(panZoom) {
+      panZoom.disable();
       this.panZoom = panZoom;
     },
     groupName(key) {

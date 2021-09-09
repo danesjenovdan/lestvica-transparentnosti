@@ -36,7 +36,7 @@ const mousePoint = (e) => new Point(e.clientX, e.clientY);
 export default function panZoom({
   container,
   content,
-  minZoom = 0.2,
+  minZoom = 0.9,
   maxZoom = 15,
   zoomStep = 0.2,
   onReady = () => {},
@@ -153,5 +153,11 @@ export default function panZoom({
 
   onReady({
     setTransform,
+    disable() {
+      container.removeEventListener('touchstart', touchStart);
+      container.removeEventListener('mousedown', mouseDown);
+      container.removeEventListener('wheel', mouseWheel);
+      container.style.cursor = '';
+    },
   });
 }

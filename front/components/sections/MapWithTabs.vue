@@ -518,7 +518,7 @@ export default {
         width: 350px;
         padding: 1.5rem;
         margin-bottom: 1rem;
-        background-color: rgba(#173d58, 0.9);
+        background-color: rgba(#173d58, 0.95);
 
         @include media-breakpoint-down(md) {
           width: auto;

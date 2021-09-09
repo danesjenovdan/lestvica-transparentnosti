@@ -153,7 +153,7 @@ export default {
       z-index: 1000;
       background-color: #a9d8ce;
       border: 1px solid #173d58;
-      padding: 2rem;
+      padding: 0.75rem 2rem;
       width: 500px;
 
       ul {
@@ -166,18 +166,21 @@ export default {
 
         li {
           &:not(:last-child) {
-            margin-bottom: 1rem;
-            padding-bottom: 1rem;
             border-bottom: 1px solid #000;
           }
 
           a {
             display: block;
+            padding: 1rem 0 0.75rem 0;
             color: #000;
             font-size: 15px;
             font-weight: 300;
             line-height: 1.4;
             text-decoration: none;
+
+            &:hover {
+              color: #173d58;
+            }
 
             em {
               display: block;

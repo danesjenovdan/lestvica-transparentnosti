@@ -42,7 +42,11 @@
                   </svg>
                 </div>
                 <div class="nav-link-wrapper">
-                  <a href="#">Metodologija</a>
+                  <a
+                    href="https://drive.google.com/file/d/16q3N0QTiDRWioPXr4UNTk-ITMj3PJ12s/view?usp=sharing"
+                    target="_blank"
+                    >Metodologija</a
+                  >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="16.44 26 64.56 48"
@@ -71,7 +75,7 @@
                     class="heavy-link"
                     >Danes je nov dan</a
                   >,
-                  <a href="#" target="_blank" class="heavy-link"
+                  <a href="http://dopd.si" target="_blank" class="heavy-link"
                     >Organizacija za participatorno družbo</a
                   >
                   in
@@ -180,6 +184,10 @@ footer {
           margin-bottom: 1em;
         }
 
+        a:hover {
+          color: #173d58;
+        }
+
         svg {
           width: auto;
           height: 0.75em;
@@ -213,6 +221,10 @@ footer {
 
       .heavy-link {
         font-weight: 900;
+      }
+
+      a:hover {
+        color: #173d58;
       }
     }
   }

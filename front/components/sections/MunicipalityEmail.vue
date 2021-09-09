@@ -5,8 +5,8 @@
         <div class="mail-title">
           <h3>POŠLJI SPOROČILO SVOJI OBČINI IN ZAHTEVAJ SPREMEMBE!</h3>
           <h4>
-            Kopiraj sporočilo in ga pošlji na
-            <strong>tajnistvo@obcina-recica.si</strong>.
+            Kopiraj sporočilo in ga pošlji na:
+            <strong class="email">{{ municipalityData.email }}</strong>
           </h4>
         </div>
       </div>
@@ -53,10 +53,10 @@ V upanju, da boste upoštevali predloge in izboljšali pogoje za participacijo t
       `.trim();
 
       const recs = this.recommendations
-        .map((r, i) => `${i + 1}. ${r.title}\n\n${r.text}`)
-        .join('\n\n\n');
+        .map((r, i) => `${i + 1}. ${r.title}\n${r.text}`)
+        .join('\n\n');
 
-      return `${pre}\n\n\n${recs}\n\n\n${post}`;
+      return `${pre}\n\n${recs}\n\n${post}`;
     },
   },
 };
@@ -105,8 +105,9 @@ V upanju, da boste upoštevali predloge in izboljšali pogoje za participacijo t
         margin-bottom: 0;
       }
 
-      strong {
+      strong.email {
         font-weight: 500;
+        white-space: nowrap;
       }
     }
   }
@@ -118,11 +119,11 @@ V upanju, da boste upoštevali predloge in izboljšali pogoje za participacijo t
   textarea {
     display: block;
     width: 100%;
-    height: 900px;
+    height: 820px;
     border: 2px solid #21435c;
     padding: 2rem;
     resize: none;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 300;
 
     @include media-breakpoint-down(md) {

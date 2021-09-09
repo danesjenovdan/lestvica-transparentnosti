@@ -166,8 +166,9 @@
           <img src="~/assets/images/P5_S3.png" alt="" />
         </div>
         <div class="caption">
-          Primer spletnega mesta občine, ki ne uporablja elementov
-          prilagojenosti spletnih mest za bralnike zaslona.
+          Primer spletnega mesta občine, ki ne uporablja označbe naslovov z
+          elementi H v HTML kodi (1), lastnost alt (2) in besedil v slikah, ki
+          jih bralniki ne morejo prebrati (3).
         </div>
       </div>
     </div>
@@ -187,21 +188,21 @@
           nerazumljivo</span
         >.
       </p>
-      <!-- </div> -->
+    </div>
 
-      <!-- <div class="described-example">
-        <div class="description-col">
-          <div class="description"></div>
-        </div>
-        <div class="example-col">
-          <div class="example">
-            <img src="~/assets/images/P5_S4.png" alt="" />
-          </div>
-          <div class="caption"></div>
-        </div>
+    <div class="described-example described-example--wide">
+      <!-- <div class="description-col">
+        <div class="description"></div>
       </div> -->
+      <div class="example-col">
+        <div class="example">
+          <img src="~/assets/images/P5_S4.png" alt="" />
+        </div>
+        <div class="caption"></div>
+      </div>
+    </div>
 
-      <!-- <div class="narrow"> -->
+    <div class="narrow">
       <p>
         Pri oblikovanju vprašalnika za ocenjevanje dostopnosti spletnih mest
         slovenskih občin smo izhajali iz priporočil organizacije World Wide Web

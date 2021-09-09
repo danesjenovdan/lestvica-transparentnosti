@@ -5,15 +5,15 @@
       <p>
         Glede na rezultate, ki jih je v raziskavi dosegla tvoja občina, smo
         podali pet predlogov, ki jih lahko upošteva za bolj odprto in
-        transparentno delovanje. Spodbujamo te, da jim posreduješ spodnje
-        predpripravljeno elektronsko sporočilo in jih pozoveš, da priporočila
-        tudi upoštevajo.
+        transparentno delovanje. Spodbujamo te, da občinskim funkcionarjem
+        posreduješ spodnje predpripravljeno elektronsko sporočilo in jih
+        pozoveš, da priporočila tudi upoštevajo.
       </p>
       <p>
-        Ker to niso edine spremembe, ki jih lahko izvede za izboljšanje števila
-        točk, predlagamo, da občinski funkcionarji podrobno preučijo rezultate
-        celotne analize ter sprejmejo odločitve, ki bodo koristile občankam in
-        občanom.
+        Ker to niso edine spremembe, ki jih lahko tvoja občina sprejme za
+        izboljšanje števila točk, predlagamo, da občinski funkcionarji podrobno
+        preučijo rezultate celotne analize ter izvedejo ukrepe, ki bodo
+        koristili občankam in občanom.
       </p>
     </div>
     <div class="narrow">
@@ -87,6 +87,7 @@ export default {
 
   .recommendation {
     margin-bottom: 5rem;
+    flex-direction: row;
 
     @include media-breakpoint-down(md) {
       margin-bottom: 2rem;
@@ -106,9 +107,8 @@ export default {
 
       @include media-breakpoint-down(md) {
         margin-right: 0;
-        flex: 0 0 auto;
-        text-align: center;
-        font-size: 48px;
+        flex-basis: 50px;
+        font-size: 38px;
       }
     }
 

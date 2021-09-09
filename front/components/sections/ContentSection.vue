@@ -78,7 +78,7 @@ export default {
   ul li,
   table {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1.6;
     margin-bottom: 1.5em;
 

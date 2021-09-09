@@ -1,10 +1,11 @@
+const BASE_PATH = '/les-trans-test/';
+const FULL_PATH = `https://danesjenovdan.si${BASE_PATH}`;
+
 const PAGE_TITLE = 'Lestvica transparentnosti';
 const OG_TITLE = 'Lestvica odprtosti in transparentnosti slovenskih občin';
 const OG_DESCRIPTION =
   'Preveri, ali tvoja občina omogoča informiranje o njenem delovanju in vplivanje na njene odločitve.';
-const OG_IMAGE = '';
-
-const BASE_PATH = '/les-trans-test/';
+const OG_IMAGE = `${FULL_PATH}OG-LESTVICA.png`;
 
 export default {
   target: 'static',
