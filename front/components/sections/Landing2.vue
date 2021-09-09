@@ -2,7 +2,7 @@
   <content-section id="preglednost-in-dostop-do-informacij" variant="blue">
     <!-- (2) Ali občani lahko nadzirajo delovanje občinskega sveta -->
     <div class="narrow">
-      <h2>Ali lahko občani spremljajo delo občinskega sveta?</h2>
+      <h2>Ali lahko občani <em>spremljajo delo</em> občinskega sveta?</h2>
 
       <p>
         Občinski svet je najvišji organ odločanja o zadevah občine, njegove
@@ -30,8 +30,6 @@
         občankam in občanom omejujejo sodelovanje v postopkih sprejemanja za
         njih pomembnih odločitev.
       </p>
-
-      <hr />
 
       <p>
         Za nadzor nad delom občinskega sveta je ključno, da se je mogoče s
@@ -94,8 +92,6 @@
     </div>
 
     <div class="narrow">
-      <hr />
-
       <h3>Kaj so že delovna telesa?</h3>
 
       <p>
@@ -144,7 +140,7 @@
       </div>
     </div>
 
-    <div class="narrow">
+    <!-- <div class="narrow">
       <table class="points-table">
         <tbody>
           <tr>
@@ -203,7 +199,7 @@
           </tr>
         </tbody>
       </table>
-    </div>
+    </div> -->
   </content-section>
 </template>
 

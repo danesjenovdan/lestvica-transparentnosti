@@ -2,7 +2,7 @@
   <content-section id="dostopnost-spletnega-mesta" variant="yellow">
     <!-- (5) Ali so spletna mesta dostopna vsem občanom -->
     <div class="narrow">
-      <h2>Ali so spletna mesta dostopna vsem občanom?</h2>
+      <h2>Ali so spletna mesta <em>dostopna vsem</em> občanom?</h2>
 
       <p>
         Odpiranje podatkov o delu občine pa ni zadostno, če informacije niso
@@ -52,8 +52,6 @@
     </div>
 
     <div class="narrow">
-      <hr />
-
       <p>
         A razkorak med zakonsko določenimi minimalnimi standardi in prakso je
         velik, za akutnega pa se je izkazal predvsem v času pandemije, ko smo
@@ -65,8 +63,6 @@
         prebivalstva, temveč so jasna, preprosta in enostavna za celotno
         populacijo.
       </p>
-
-      <hr />
 
       <p>
         Pri analizi vizualne predstavitve informacij in uporabniškega vmesnika
@@ -116,9 +112,9 @@
           >30,7 % spletnih mest ne omogoča takšnega brskanja</span
         >.
       </p>
-    </div>
+      <!-- </div> -->
 
-    <!-- <div class="described-example">
+      <!-- <div class="described-example">
         <div class="description-col">
           <div class="description"></div>
         </div>
@@ -134,9 +130,7 @@
         </div>
       </div> -->
 
-    <div class="narrow">
-      <hr />
-
+      <!-- <div class="narrow"> -->
       <p>
         Osnovno prilagojenost spletnih mest za bralnike zaslona smo preverjali z
         razširjenostjo uporabe: 1) označbe naslovov z elementi H v HTML kodi, ki
@@ -173,8 +167,6 @@
     </div>
 
     <div class="narrow">
-      <hr />
-
       <p>
         Pomemben del dostopnosti spletnih mest predstavlja tudi razumljivost
         informacij, ki med drugim vključuje jasna poimenovanja podstrani,

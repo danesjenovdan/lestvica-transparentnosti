@@ -4,19 +4,32 @@
       <div class="cols">
         <div class="col text-col">
           <h1>
-            Ali je delovanje slovenskih občin na spletu odprto in transparentno?
+            Ali je delovanje slovenskih občin na spletu <em>odprto</em> in
+            <em>transparentno</em>?
           </h1>
           <p>
             Čeprav se morda zdi, da igrajo v državi pomembno vlogo le odločitve
-            vlade, tudi delovanje lokalne samouprave bistveno vpliva na naša
-            vsakdanja življenja. Ker mora biti njihovo delovanje odprto in
-            vključujoče, smo na inštitutu Danes je nov dan v sodelovanju z
-            Organizacijo za participatorno družbo ter PIC - Pravni center za
-            varstvo človekovih pravic in okolja pripravili
-            <strong>
-              raziskavo transparentnosti in odprtosti slovenskih občin, v kateri
-              smo z 80 kazalniki ocenili vseh 212 slovenskih občin </strong
-            >.
+            vlade, tudi lokalna samouprava bistveno vpliva na naša vsakdanja
+            življenja. Ker mora biti zato njihovo delovanje odprto in
+            vključujoče, smo na inštitutu
+            <a href="https://danesjenovdan.si" target="_blank"
+              >Danes je nov dan</a
+            >
+            v sodelovanju z
+            <a href="http://dopd.si" target="_blank"
+              >Organizacijo za participatorno družbo</a
+            >
+            ter
+            <a href="https://pic.si" target="_blank"
+              >PIC – Pravni center za varstvo človekovih pravic in okolja</a
+            >
+            pripravili
+            <strong
+              >raziskavo transparentnosti in odprtosti slovenskih občin.</strong
+            >
+            V njej smo
+            <strong>z 80 kazalniki ocenili vseh 212 slovenskih občin</strong>,
+            pri čemer smo pregledovali vsebine in podatke za leto 2020.
           </p>
           <h2>Kaj smo ugotovili v raziskavi?</h2>
           <p>
@@ -27,8 +40,8 @@
             hiperpovezav ali pa na voljo le v več sto strani dolgih in
             zapletenih dokumentih.
             <strong>
-              Kar 95 % občin pri pregledu vsebin za leto 2020 ni doseglo niti
-              polovice od 100 možnih točk </strong
+              Kar 95 % občin pri pregledu vsebin ni doseglo niti polovice od 100
+              možnih točk</strong
             >, tudi najvišje ocenjena občina pa je dosegla le 67,2 točke. Občine
             tako v veliki meri ne omogočajo ustrezne participacije ali
             informiranja občank in občanov.
@@ -39,7 +52,7 @@
             vsemi občinami ali pa tistimi, ki imajo podobno število prebivalcev
             oziroma višino proračuna. Poleg tega pa smo pripravili tudi pogled
             na širšo sliko stanja odprtosti in transparentnosti na področju
-            lokalne uprave v Sloveniji.
+            lokalne samouprave v Sloveniji.
             <strong>
               Za vsako občino smo podali nekaj priporočil, s pomočjo katerih bo
               lahko v prihodnje delovala bolj odprto, tebe pa spodbujamo, da jim
@@ -89,7 +102,7 @@ export default {
 
   h1,
   h2 {
-    font-size: 48px;
+    font-size: 54px;
     font-weight: 900;
     line-height: 1.2;
     text-transform: uppercase;
@@ -107,7 +120,8 @@ export default {
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 30px;
+    font-weight: 700;
 
     @include media-breakpoint-down(md) {
       font-size: 20px;
@@ -116,7 +130,7 @@ export default {
 
   p {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1.4;
     margin-bottom: 1.5em;
 

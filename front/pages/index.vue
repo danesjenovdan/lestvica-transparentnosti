@@ -8,9 +8,7 @@
       <div class="narrow">
         <p class="center">
           Preveri, kako se je na lestvici odprtosti in transparentnosti odrezala
-          posamezna občina, in jo primerjaj z ostalimi slovenskimi občinami.
-          Ogledaš si lahko skupne rezultate ali pa brskaš po posameznih
-          vsebinskih sklopih.
+          posamezna občina ter jo primerjaj z ostalimi slovenskimi občinami.
         </p>
       </div>
     </content-section>

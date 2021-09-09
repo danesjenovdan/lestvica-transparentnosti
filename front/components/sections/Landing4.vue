@@ -5,7 +5,10 @@
   >
     <!-- (4) Ali lahko občani sodelujejo v postopku sprejemanja proračuna -->
     <div class="narrow">
-      <h2>Ali lahko občani sodelujejo v postopku sprejemanja proračuna?</h2>
+      <h2>
+        Ali lahko občani <em>sodelujejo</em> v postopku sprejemanja
+        <em>proračuna</em>?
+      </h2>
 
       <p>
         Proračun je najpomembnejši dokument, ki ga občina sprejema v sklopu

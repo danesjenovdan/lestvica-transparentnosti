@@ -3,8 +3,8 @@
     <!-- (0) Kaj je pokazala raziskava odprtosti in transparentnosti slovenskih občin -->
     <div class="narrow">
       <h2>
-        Kaj je pokazala raziskava odprtosti in transparentnosti slovenskih
-        občin?
+        Kaj je <em>pokazala raziskava</em> odprtosti in transparentnosti
+        slovenskih občin?
       </h2>
 
       <p>
@@ -109,8 +109,9 @@
           proračuna so občine v povprečju dosegle 6,8 od 20 točk.
         </span>
         Občine so v tem sklopu točke izgubljale predvsem zaradi uporabniku
-        neprijazne in nerazumljive objave proračunov in pomanjkanja posvetovanja
-        z občani ob sprejemanju proračunov. Ker gre pri proračunu za enega od
+        neprijazne in nerazumljive objave proračunov, že prej izpostavljenega
+        pomanjkanja datuma objave dokumentov in pomanjkanja posvetovanja z
+        občani ob sprejemanju proračunov. Ker gre pri proračunu za enega od
         najpomembnejših občinskih dokumentov, morajo občine na tem področju
         vložiti več naporov v aktivno vključevanje občank in občanov.
       </p>

@@ -6,7 +6,8 @@
     <!-- (1) Ali občine sledijo standardom odprtosti in transparentnosti -->
     <div class="narrow">
       <h2>
-        Ali občinski sveti sledijo standardom odprtosti in transparentnosti
+        Ali občinski sveti sledijo
+        <em>standardom odprtosti in transparentnosti</em>
         javne uprave?
       </h2>
 
@@ -71,8 +72,6 @@
     </div>
 
     <div class="narrow">
-      <hr />
-
       <p>
         Pogosto je slabo stanje na področju odprtosti delovanja občin posledica
         ohlapne zakonodaje, ki praktično ne naslavlja vprašanj dostopnosti
@@ -92,8 +91,6 @@
         oziroma je ta med najrazličnejšimi predpisi in akti tako skrita, da jo
         lahko najdejo le najbolj izkušeni pravniki.
       </p>
-
-      <hr />
 
       <p>
         Za odprto delovanje občin namreč ni pomembno le, da so informacije
@@ -235,8 +232,6 @@
         To sicer predstavlja minimalni spletni standard, ki omogoča sledljivost
         in analizo ter nadzor nad spoštovanjem zakonsko predpisanih rokov.
       </p>
-
-      <hr />
 
       <p>
         In če lahko številne spodrsljaje ter ponekod celo nepoznavanje osnov

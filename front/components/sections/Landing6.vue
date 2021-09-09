@@ -6,7 +6,8 @@
     <!-- (6) Ali so občani vključeni v delovanje občine in o tem ustrezno obveščeni -->
     <div class="narrow">
       <h2>
-        Ali so občani vključeni v delovanje občine in o tem ustrezno obveščeni?
+        Ali so občani <em>vključeni</em> v delovanje občine in o tem ustrezno
+        <em>obveščeni</em>?
       </h2>
 
       <p>

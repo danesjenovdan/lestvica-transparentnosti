@@ -2,7 +2,9 @@
   <content-section variant="orange">
     <!-- (3) Ali lahko občani nadzorujejo delo izvoljenih predstavnikov -->
     <div class="narrow">
-      <h2>Ali lahko občani nadzorujejo delo izvoljenih predstavnikov?</h2>
+      <h2>
+        Ali lahko občani <em>nadzorujejo delo</em> izvoljenih predstavnikov?
+      </h2>
 
       <p>
         Občinski svetniki in svetnice so demokratično izvoljeni s strani občank
