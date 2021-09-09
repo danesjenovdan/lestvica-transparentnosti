@@ -57,6 +57,11 @@ export default {
       default: null,
     },
   },
+  data() {
+    return {
+      lastInput: '',
+    };
+  },
   computed: {
     ...mapState(['municipalitiesList', 'municipalityData']),
     municipalities() {
@@ -67,6 +72,7 @@ export default {
   },
   methods: {
     search(input) {
+      this.lastInput = input;
       if (!input?.length && this.onClear) {
         this.onClear();
       }
@@ -81,20 +87,20 @@ export default {
       return value.name;
     },
     onSubmit(value) {
+      if (!value && this.lastInput?.length) {
+        const input = this.lastInput.toLowerCase().trim();
+        value = this.municipalities.find(
+          (m) => m.name.toLowerCase().trim() === input
+        );
+      }
       if (!value) {
         return;
       }
-      const municipality = this.municipalitiesList.find(
-        (m) => m.id === value.id
-      );
-      if (!municipality) {
-        return;
-      }
       if (this.onSelect) {
-        this.onSelect(municipality);
+        this.onSelect(value);
         return;
       }
-      this.$router.push(`/obcina/${municipality.id}/`);
+      this.$router.push(`/obcina/${value.id}/`);
     },
   },
 };
