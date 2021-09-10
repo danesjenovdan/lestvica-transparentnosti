@@ -29,14 +29,14 @@ class Command(BaseCommand):
                 {
                     'question': 'Ali so javno objavljeni kontaktni podatki članov občinskega sveta (elektronski naslov, telefonska številka ...)? ',
                     'score': 0,
-                    'title': 'Občina naj objavi kontaktne podatke (vsaj elektronske naslove) občinskih svetnikov.',
-                    'text': 'Občani morajo imeti možnost kontaktiranja svoje izvoljene predstavnike.',
+                    'title': 'Občina naj objavi kontaktne podatke občinskih svetnikov (vsaj elektronske naslove).',
+                    'text': 'Občani morajo imeti možnost kontaktiranja svojih izvoljenih predstavnikov.',
                     'importance': 18,
                 },
                 {
                     'question': 'Ali je organizirana javna razprava glede predloga proračuna in ali je vabilo na javno razpravo objavljeno na spletnem mestu občine?',
                     'score': 0,
-                    'title': 'Občina naj organizira javno razpravo glede predloga proračuna in objavi vabilo na na spletnem mestu občine.',
+                    'title': 'Občina naj organizira javno razpravo glede predloga proračuna in objavi vabilo na spletnem mestu občine.',
                     'text': 'Organizirana javna razprava o letnih proračunih občanom namreč omogoča informiranje in podajanje predlogov o porabi občinskih sredstev.',
                     'importance': 17,
                 },
@@ -44,7 +44,7 @@ class Command(BaseCommand):
                     'question': 'Ali ima občina objavljeno izjavo o dostopnosti spletnega mesta?',
                     'score': -1,
                     'title': 'Občina naj pripravi in objavi izjavo o dostopnosti spletnega mesta.',
-                    'text': 'Občine z izjavo, ki so jo dolžne objaviti po zakonu, pojasnijo, katere vsebine niso dostopne osebam z oviranostmi, razloge za takšno nedostopnost, ter navedbe nadomestnih možnosti dostopa.',
+                    'text': 'Občine z izjavo, ki so jo dolžne objaviti po zakonu, pojasnijo, katere vsebine niso dostopne osebam z oviranostmi, razloge za takšno nedostopnost ter navedbe nadomestnih možnosti dostopa.',
                     'importance': 12,
                 },
                 {
@@ -65,7 +65,7 @@ class Command(BaseCommand):
                     'question': 'Ali se proračun sprejema z enim ali dvema branjema?',
                     'score': 0,
                     'title': 'Občina naj sprejme proračun v dveh branjih.',
-                    'text': 'Sprejemanje v dveh branjih omogoča, da se občani seznanijo z vsebino predloga, slišijo kritike proračuna z vrst občinskih svetnikov, se v času med prvim in drugim branjem dodatno informirajo ter nato vključijo z lastnimi predlogi ali pripombami.',
+                    'text': 'Sprejemanje v dveh branjih omogoča, da se občani seznanijo z vsebino predloga, slišijo kritike proračuna iz vrst občinskih svetnikov, se v času med prvim in drugim branjem dodatno informirajo ter nato vključijo z lastnimi predlogi ali pripombami.',
                     'importance': 9,
                 },
                 {
@@ -90,8 +90,19 @@ class Command(BaseCommand):
                     'importance': 4,
                 }
             ]
-            for recommendation in simple_recommendations:
-                print(municipality, recommendation)
+            # remove PB recommendation from municipalities
+            # who started doing PB since 2021
+            pp_municipalities = ['Benedikt', 'Divača', 'Izola', 'Jesenice', 'Laško', 'Logatec', 'Lovrenc na Pohorju', 'Maribor', 'Medvode', 'Ptuj', 'Radovljica', 'Ruše', 'Semič', 'Sevnica', 'Škofja Loka']
+            if municipality.name in pp_municipalities:
+                filtered_simple_recommendations = filter(
+                    lambda x: x['question'] != 'Ali občina izvaja participativni proračun?',
+                    simple_recommendations
+                )
+            else:
+                filtered_simple_recommendations = simple_recommendations
+
+            for recommendation in filtered_simple_recommendations:
+                # print(municipality, recommendation)
                 if Answer.objects.get(
                     municipality=municipality,
                     question__text=recommendation['question']
@@ -111,7 +122,7 @@ class Command(BaseCommand):
             ).score < 2:
                 recommendation, _created = Recommendation.objects.get_or_create(
                     municipality=municipality,
-                    title='Občina naj spletne objave konsistentno opremi z datumom objave.',
+                    title='Občina naj spletne objave o delovanju občinskega sveta dosledno opremlja z datumom objave.',
                     text='Le na tak način lahko občina dokaže, da so bili dokumenti objavljeni v časovnem obdobju, ki ga določa zakonodaja oziroma občinski poslovnik.',
                     importance=16,
                 )
@@ -169,7 +180,7 @@ class Command(BaseCommand):
                 recommendation, _created = Recommendation.objects.get_or_create(
                     municipality=municipality,
                     title='Občina naj objavi zadnjo prečiščeno verzijo poslovnika na svojem spletnem mestu.',
-                    text='Poslovniki urejajo številna področja delovanja občin in so kot taki ključen dokument, ki občanom omogoča razumevanje njihovih pravic.',
+                    text='Poslovniki urejajo številna področja delovanja občin in so kot taki ključen dokument, ki občanom omogoča razumevanje svojih pravic.',
                     importance=13,
                 )
             
