@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    margin-left: 1em;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+input[type='search']::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+a {
+  &,
+  &:visited {
+    color: inherit;
+    text-decoration: underline;
+  }
+}

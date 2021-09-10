@@ -25,16 +25,16 @@
     "question_id": 4,
     "question": "Ali se seje predvajajo v živo z video in / ali zvočnim prenosom?",
     "answers": {
-        "Ne": 1,
-        "Da": 0
+        "Ne": 0,
+        "Da": 1
     }
 }, {
     "question_id": 5,
     "question": "Ali je zvočni posnetek javno objavljen / dostopen javnosti na zahtevo?",
     "answers": {
-        "Na zahtevo": 1,
-        "Ne": 0.5,
-        "Da": 0
+        "Na zahtevo": 0.5,
+        "Ne": 0,
+        "Da": 1
     }
 }, {
     "question_id": 6,
@@ -80,16 +80,16 @@
     "question": "Ali so seje delovnih teles najavljene vnaprej na spletnem mestu občine?",
     "answers": {
         "Da, 7 ali več dni pred obravnavo": 1,
-        "Ni objavljeno / Objavljeno po seji / Datum objave ni razviden in poslovnik ne zapoveduje objave na spletnem mestu": 0.5,
-        "Da": 0
+        "Ni objavljeno / Objavljeno po seji / Datum objave ni razviden in poslovnik ne zapoveduje objave na spletnem mestu": 0,
+        "Da, vendar manj kot 7 dni pred sejo / Datum ni razviden, vendar poslovnik narekuje objavo vabila na spletnem mestu pred sejo": 0.5
     }
 }, {
     "question_id": 13,
     "question": "Ali so gradiva za seje delovnih teles objavljene vnaprej?",
     "answers": {
         "Da, 7 ali več dni pred obravnavo": 1,
-        "Ni objavljeno / Objavljeno po seji / Datum objave ni razviden in poslovnik ne zapoveduje objave na spletnem mestu": 0.5,
-        "Da": 0
+        "Ni objavljeno / Objavljeno po seji / Datum objave ni razviden in poslovnik ne zapoveduje objave na spletnem mestu": 0,
+        "Da, vendar manj kot 7 dni pred sejo / Datum ni razviden, vendar poslovnik narekuje objavo vabila na spletnem mestu pred sejo": 0.5
     }
 }, {
     "question_id": 14,
