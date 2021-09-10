@@ -12,6 +12,7 @@ class Question(models.Model):
     group = models.ForeignKey('Group', on_delete=models.CASCADE, blank=False, null=False)
     text = models.TextField(blank=False, null=False)
     original_text = models.TextField(blank=False, null=False, editable=False)
+    max_score = models.FloatField(blank=False, null=False, default=1)
 
     def __str__(self):
         return self.text
@@ -119,10 +120,14 @@ class Municipality(models.Model):
 
     @property    
     def questions(self):
-        # questions = Question.objects.all()
-        return Answer.objects.filter(
-            municipality=self,
-        ).values('question__text', 'score', 'text')
+        return [
+            {
+                'question__text': answer.question.text,
+                'score': answer.score,
+                'max_score': answer.question.max_score,
+                'text': answer.text,
+            } for answer in Answer.objects.filter(municipality=self)
+        ]
     
     @property
     def bucket_peers(self):
