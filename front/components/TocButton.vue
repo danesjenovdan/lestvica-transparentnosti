@@ -155,6 +155,9 @@ export default {
       border: 1px solid #173d58;
       padding: 0.75rem 2rem;
       width: 500px;
+      max-height: calc(100vh - 70px);
+      overflow: hidden;
+      overflow-y: auto;
 
       ul {
         &,
