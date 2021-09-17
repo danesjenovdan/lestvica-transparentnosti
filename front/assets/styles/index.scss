@@ -4,6 +4,7 @@
 body {
   font-family: 'paralucent', sans-serif;
   letter-spacing: 0.03em;
+  overflow-x: hidden;
 }
 
 svg {
@@ -15,11 +16,15 @@ svg {
 .container {
   --page-gutter: 2rem;
 
-  max-width: 1590px;
+  max-width: 1320px;
   padding-left: var(--page-gutter);
   padding-right: var(--page-gutter);
   margin-left: auto;
   margin-right: auto;
+
+  @include media-breakpoint-down(xxl) {
+    max-width: 1140px;
+  }
 
   @include media-breakpoint-down(md) {
     --page-gutter: 1rem;

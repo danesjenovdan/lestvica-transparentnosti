@@ -151,15 +151,16 @@ export default {
     display: flex;
     gap: 2rem;
     justify-content: center;
-    margin: 6rem auto;
+    margin: 6rem calc(-2 * var(--page-gutter));
     flex-wrap: wrap;
-    max-width: 1300px;
+    max-width: 100vw;
 
     &:last-child {
       margin-bottom: 0;
     }
 
     &.boxes-2col {
+      margin: 6rem auto;
       flex-wrap: wrap;
       max-width: 850px;
     }
@@ -170,7 +171,7 @@ export default {
     }
 
     .box {
-      width: 400px;
+      width: 380px;
       background-color: var(--highlight-color);
       padding: 2.5rem 2rem 2rem;
 
@@ -215,7 +216,7 @@ export default {
   .described-example {
     display: flex;
     justify-content: center;
-    margin: 6rem 0;
+    margin: 6rem calc(-1 * var(--page-gutter));
 
     @include media-breakpoint-down(md) {
       flex-direction: column;
@@ -320,6 +321,31 @@ export default {
       @include media-breakpoint-down(md) {
         margin-left: 0;
         margin-top: -1.5rem;
+      }
+    }
+  }
+
+  .side-image-wrapper {
+    height: 0;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      right: -2rem;
+      display: block;
+
+      transform: translate(65%, -100%);
+      width: 350px;
+      height: 350px;
+
+      // @include media-breakpoint-down(xxl) {
+      //   transform: translate(65%, -110%);
+      //   width: 300px;
+      // }
+
+      @include media-breakpoint-down(xl) {
+        display: none;
       }
     }
   }

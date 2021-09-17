@@ -97,7 +97,7 @@ header {
     }
 
     .toc-col {
-      flex: 3;
+      flex: 2;
       display: flex;
       justify-content: flex-end;
       align-items: center;

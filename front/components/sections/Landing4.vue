@@ -10,6 +10,10 @@
         <em>proračuna</em>?
       </h2>
 
+      <div class="side-image-wrapper">
+        <img src="~/assets/images/ilustracija-proracun.svg" alt="" />
+      </div>
+
       <p>
         Proračun je najpomembnejši dokument, ki ga občina sprejema v sklopu
         svojega delovanja, saj določa vse aktivnosti občine in porabo vseh
@@ -53,7 +57,7 @@
       </p>
     </div>
 
-    <div class="boxes">
+    <div class="boxes boxes-2col">
       <div class="box">
         <div class="box-text">
           <strong>

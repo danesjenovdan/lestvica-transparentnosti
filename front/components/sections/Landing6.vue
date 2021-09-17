@@ -10,6 +10,10 @@
         <em>obveščeni</em>?
       </h2>
 
+      <div class="side-image-wrapper">
+        <img src="~/assets/images/ilustracija-obvescanje.svg" alt="" />
+      </div>
+
       <p>
         Ker so občanke in občani najboljši vir informacij o potrebah lokalne
         skupnosti, njihovo vključevanje v procese odločanja občini ne prinaša le
@@ -46,7 +50,7 @@
       </p>
     </div>
 
-    <div class="boxes">
+    <div class="boxes boxes-2col">
       <div class="box">
         <div class="box-text">
           <strong>
@@ -76,7 +80,7 @@
       </p>
     </div>
 
-    <div class="boxes">
+    <div class="boxes boxes-2col">
       <div class="box">
         <div class="box-text">
           <strong>

@@ -7,6 +7,10 @@
         slovenskih občin?
       </h2>
 
+      <div class="side-image-wrapper">
+        <img src="~/assets/images/ilustracija-raziskava.svg" alt="" />
+      </div>
+
       <p>
         <span class="highlighted">
           V povprečju so slovenske občine v pričujoči raziskavi odprtosti in
