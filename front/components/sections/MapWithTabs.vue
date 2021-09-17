@@ -89,13 +89,12 @@
           <div :class="['peer-list', { closed: !peerListOpen }]">
             <div ref="peerList" class="peer-list-elements">
               <div
-                v-for="(peer, i) in peers"
+                v-for="peer in peers"
                 :key="peer.id"
                 class="peer-list-element"
               >
-                <!-- <div class="name">{{ peer.rank }}. {{ peer.name }}</div> -->
-                <div class="name">{{ i + 1 }}. {{ peer.name }}</div>
-                <div class="score">{{ Math.round(peer.score) }} točk</div>
+                <div class="name">{{ peer.rank }}. {{ peer.name }}</div>
+                <div class="score">{{ peer.formattedScore }} točk</div>
               </div>
             </div>
             <div class="peer-list-toggle" @click="peerListOpen = !peerListOpen">
@@ -225,6 +224,7 @@
 <script>
 import { mapState } from 'vuex';
 import { GROUP_NAMES } from '~/utils/constants';
+import { formatScore } from '~/utils/format';
 import BackgroundSection from '~/components/sections/BackgroundSection.vue';
 import SearchField from '~/components/SearchField.vue';
 import PanZoom from '~/components/PanZoom.vue';
@@ -275,13 +275,32 @@ export default {
       return (m) => m.groups[key].bucket;
     },
     peers() {
+      let lastFormattedScore;
+      let lastRank;
       return (this.municipalitiesList || [])
-        .map((m) => ({
-          name: m.name,
-          rank: m.rank,
-          score: this.getScore(m),
-        }))
-        .sort((a, b) => b.score - a.score);
+        .map((m) => {
+          const score = this.getScore(m);
+          const formattedScore = formatScore(score);
+          return {
+            name: m.name,
+            score,
+            formattedScore,
+          };
+        })
+        .sort((a, b) => b.score - a.score)
+        .map((m, i) => {
+          let rank = i + 1;
+          if (m.formattedScore === lastFormattedScore) {
+            rank = lastRank;
+          } else {
+            lastFormattedScore = m.formattedScore;
+            lastRank = rank;
+          }
+          return {
+            ...m,
+            rank,
+          };
+        });
     },
   },
   methods: {
