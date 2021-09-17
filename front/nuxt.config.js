@@ -105,6 +105,14 @@ export default {
         href: 'https://use.typekit.net/mdt7xgm.css',
       },
     ],
+    script: [
+      {
+        src: 'https://plausible.lb.djnd.si/js/plausible.js',
+        async: true,
+        defer: true,
+        'data-domain': 'danesjenovdan.si',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
