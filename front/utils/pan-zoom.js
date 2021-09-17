@@ -43,6 +43,8 @@ export default function panZoom({
   onTransformChange = () => {},
 }) {
   container.style.cursor = 'grab';
+  container.style.userSelect = 'none';
+  container.style.touchAction = 'none';
   let panning = false;
   let zooming = false;
   let start0 = new Point();
@@ -178,6 +180,8 @@ export default function panZoom({
       container.removeEventListener('wheel', mouseWheel);
       container.removeEventListener('click', mouseClick, true);
       container.style.cursor = '';
+      container.style.userSelect = '';
+      container.style.touchAction = '';
     },
   });
 }
