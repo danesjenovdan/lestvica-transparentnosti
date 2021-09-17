@@ -12,7 +12,7 @@
           <p class="q">
             {{ question.question__text }}
           </p>
-          <p class="score">{{ question.score }}</p>
+          <p class="score">{{ question.score }} / {{ question.max_score }}</p>
         </div>
         <p class="a">
           {{ question.text }}
