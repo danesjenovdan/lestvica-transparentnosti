@@ -107,6 +107,7 @@ export default {
       font-weight: 700;
       box-shadow: -0.2em 0 0 var(--highlight-color),
         0.2em 0 0 var(--highlight-color);
+      box-decoration-break: clone;
 
       .large {
         line-height: 0;
