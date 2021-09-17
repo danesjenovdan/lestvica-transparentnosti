@@ -16,11 +16,15 @@ svg {
 .container {
   --page-gutter: 2rem;
 
-  max-width: 1320px;
+  max-width: 1590px;
   padding-left: var(--page-gutter);
   padding-right: var(--page-gutter);
   margin-left: auto;
   margin-right: auto;
+
+  @include media-breakpoint-down(xxxl) {
+    max-width: 1320px;
+  }
 
   @include media-breakpoint-down(xxl) {
     max-width: 1140px;
