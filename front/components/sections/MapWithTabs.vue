@@ -3,11 +3,13 @@
     <div class="map-with-tabs">
       <div class="search-fields">
         <search-field
+          ref="firstSearchField"
           dark
           :on-select="onSelectFirst"
           :on-clear="onClearFirst"
         />
         <search-field
+          ref="secondSearchField"
           dark
           placeholder="Vpiši občino za primerjavo"
           :on-select="onSelectSecond"
@@ -83,6 +85,8 @@
                 :pan-zoom="panZoom"
                 :get-bucket="getBucket"
                 :highlight-municipalities="selectedMunicipalities"
+                :move-map-on-highlight="!disableMapMove"
+                @click.native="onMapClick"
               />
             </pan-zoom>
           </client-only>
@@ -92,6 +96,7 @@
                 v-for="peer in peers"
                 :key="peer.id"
                 class="peer-list-element"
+                @click="onPeerClick(peer)"
               >
                 <div class="name">{{ peer.rank }}. {{ peer.name }}</div>
                 <div class="score">{{ peer.formattedScore }} točk</div>
@@ -202,13 +207,6 @@
                     <div class="score-value">{{ group.score }} / 20</div>
                   </div>
                 </div>
-                <!-- <div class="scores-caption">
-                  Za podrobne rezultate klikni
-                  <nuxt-link
-                    :to="`/obcina/${selectedMunicipality2.id}/rezultati`"
-                    >tukaj</nuxt-link
-                  >.
-                </div> -->
               </div>
             </div>
           </div>
@@ -244,6 +242,7 @@ export default {
       peerListOpen: true,
       selectedMunicipality1: null,
       selectedMunicipality2: null,
+      disableMapMove: false,
     };
   },
   computed: {
@@ -311,20 +310,65 @@ export default {
       return GROUP_NAMES[key]?.name || key;
     },
     onSelectFirst(municipality) {
+      this.disableMapMove = false;
       this.selectedMunicipality1 = municipality;
     },
     onSelectSecond(municipality) {
+      this.disableMapMove = false;
       this.selectedMunicipality2 = municipality;
     },
     onClearFirst() {
+      this.disableMapMove = true;
       this.selectedMunicipality1 = null;
     },
     onClearSecond() {
+      this.disableMapMove = true;
       this.selectedMunicipality2 = null;
     },
     onTabClick(tabIndex) {
       this.selectedTab = tabIndex;
       this.$refs.peerList.scrollTop = 0;
+    },
+    changeSearchFieldValue(searchField, value) {
+      searchField.lastInput = value;
+      searchField.$refs.autocomplete.handleInput({ target: { value } });
+    },
+    selectMunicipalityByName(name) {
+      const fixedName = name.replace('-', ' - ').toLowerCase().trim();
+      const municipality = (this.municipalitiesList || []).find(
+        (m) => m.name.toLowerCase().trim() === fixedName
+      );
+      if (municipality) {
+        this.disableMapMove = true;
+        if (this.selectedMunicipality1 === municipality) {
+          this.selectedMunicipality1 = null;
+          this.changeSearchFieldValue(this.$refs.firstSearchField, '');
+        } else if (this.selectedMunicipality2 === municipality) {
+          this.selectedMunicipality2 = null;
+          this.changeSearchFieldValue(this.$refs.secondSearchField, '');
+        } else if (!this.selectedMunicipality1) {
+          this.selectedMunicipality1 = municipality;
+          this.changeSearchFieldValue(
+            this.$refs.firstSearchField,
+            municipality.name
+          );
+        } else {
+          this.selectedMunicipality2 = municipality;
+          this.changeSearchFieldValue(
+            this.$refs.secondSearchField,
+            municipality.name
+          );
+        }
+      }
+    },
+    onMapClick(event) {
+      const element = event.target.closest('[data-name]');
+      if (element) {
+        this.selectMunicipalityByName(element.getAttribute('data-name'));
+      }
+    },
+    onPeerClick(peer) {
+      this.selectMunicipalityByName(peer.name);
     },
   },
 };
@@ -463,6 +507,7 @@ export default {
         font-size: 20px;
         display: flex;
         align-items: center;
+        cursor: pointer;
 
         @include media-breakpoint-down(md) {
           font-size: 16px;

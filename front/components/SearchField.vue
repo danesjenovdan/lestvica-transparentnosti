@@ -7,12 +7,13 @@
     ]"
   >
     <autocomplete
+      ref="autocomplete"
       :search="search"
       :get-result-value="getResultValue"
       :default-value="''"
       :placeholder="placeholder != null ? placeholder : 'Poišči občino'"
       @submit="onSubmit"
-    ></autocomplete>
+    />
     <button v-if="showButton" type="button" @click="onSubmit">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="1.99 2 27.69 27.67">
         <path
