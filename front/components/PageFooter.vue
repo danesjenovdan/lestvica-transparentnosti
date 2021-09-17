@@ -31,7 +31,11 @@
             <div class="cols">
               <div class="col nav-col">
                 <div class="nav-link-wrapper">
-                  <a href="#">Celotna zbirka podatkov</a>
+                  <a
+                    href="https://lestvica-transparentnosti.lb.djnd.si/"
+                    target="_blank"
+                    >Celotna zbirka podatkov</a
+                  >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="16.44 26 64.56 48"
