@@ -1,4 +1,4 @@
-const BASE_PATH = '/les-trans-test/';
+const BASE_PATH = '/lestvica-transparentnosti/';
 const FULL_PATH = `https://danesjenovdan.si${BASE_PATH}`;
 
 const PAGE_TITLE = 'Lestvica transparentnosti';
