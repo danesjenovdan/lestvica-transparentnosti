@@ -61,7 +61,7 @@
       <div class="box">
         <div class="box-text">
           <strong>
-            <span class="large">120</span> občin je za proračun za leto 2020
+            <span class="large">121</span> občin je za proračun za leto 2020
             organiziralo javno razpravo in vabilo objavilo na svojem spletnem
             mestu.
           </strong>
