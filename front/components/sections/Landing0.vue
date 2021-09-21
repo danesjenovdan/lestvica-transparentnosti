@@ -23,7 +23,7 @@
         delovanja.
         <span class="highlighted">
           Najbolje se je sicer odrezala Mestna občina Ljubljana, ki je dosegla
-          67,2 točke, najslabše pa Občina Velika Polana, ki je dosegla zgolj
+          69,2 točke, najslabše pa Občina Velika Polana, ki je dosegla zgolj
           13,5 točke.
         </span>
       </p>
@@ -110,7 +110,7 @@
       <p>
         <span class="highlighted">
           Pri transparentnosti in vključenosti v postopek sprejemanja občinskega
-          proračuna so občine v povprečju dosegle 6,8 od 20 točk.
+          proračuna so občine v povprečju dosegle 6,9 od 20 točk.
         </span>
         Občine so v tem sklopu točke izgubljale predvsem zaradi uporabniku
         neprijazne in nerazumljive objave proračunov, že prej izpostavljenega
