@@ -71,7 +71,7 @@
         mesta. Ugotovili smo, da
         <span class="highlighted">
           primeren barvni kontrast uporablja zgolj
-          <span class="large">36</span>&nbsp;% občinskih spletnih mest</span
+          <span class="large">46</span>&nbsp;% občinskih spletnih mest</span
         >. Poleg tega morajo spletna mesta omogočati tudi berljivost vsebin ob
         uporabi brskalniške nastavitve za povečavo, kar koristi predvsem
         slabovidnim, a

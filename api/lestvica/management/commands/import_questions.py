@@ -86,7 +86,7 @@ class Command(BaseCommand):
                     print('[QUESTION]: ' + line['VPRAŠANJE'])
 
                     for municipality_name in municipality_names:
-                        municipality = Municipality.objects.get(name=municipality_name)
+                        municipality = Municipality.objects.get(name=municipality_name.strip())
                         _answer, _answer_created = Answer.objects.get_or_create(
                             question=question,
                             municipality=municipality,
