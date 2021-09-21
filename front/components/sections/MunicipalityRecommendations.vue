@@ -16,6 +16,9 @@
         koristili občankam in občanom.
       </p>
     </div>
+    <div class="side-image-wrapper">
+      <img src="~/assets/images/ilustracija-obcina.svg" alt="" />
+    </div>
     <div class="narrow">
       <div class="recommendations">
         <div
@@ -133,6 +136,12 @@ export default {
         font-weight: 300;
       }
     }
+  }
+}
+
+.side-image-wrapper.side-image-wrapper {
+  img {
+    transform: translate(50%, -35%);
   }
 }
 </style>

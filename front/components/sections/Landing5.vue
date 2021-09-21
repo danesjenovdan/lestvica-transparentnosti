@@ -198,7 +198,10 @@
         <div class="example">
           <img src="~/assets/images/P5_S4.png" alt="" />
         </div>
-        <div class="caption"></div>
+        <div class="caption">
+          Primer nerazumljivo poimenovanih občinskih dokumentov, iz katerih
+          občanke in občani ne morejo sklepati ničesar o njihovi vsebini.
+        </div>
       </div>
     </div>
 

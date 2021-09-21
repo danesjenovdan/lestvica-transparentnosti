@@ -22,6 +22,10 @@ export default {
       type: Array,
       default: null,
     },
+    moveMapOnHighlight: {
+      type: Boolean,
+      default: true,
+    },
     getBucket: {
       type: Function,
       default: null,
@@ -42,7 +46,9 @@ export default {
       this.setInitialTransform();
     },
     highlightMunicipalities() {
-      this.resetTransform();
+      if (this.moveMapOnHighlight) {
+        this.resetTransform();
+      }
       this.$nextTick(() => {
         this.colorizeMunicipalities();
       });
@@ -124,12 +130,16 @@ export default {
         const centY = containerRect.y + containerRect.height / 2;
         const offX = (centX - xMin - width / 2) * scale;
         const offY = (centY - yMin - height / 2) * scale;
-        this.initialPoint = { x: offX, y: offY };
-        this.initialScale = scale;
+        if (this.moveMapOnHighlight) {
+          this.initialPoint = { x: offX, y: offY };
+          this.initialScale = scale;
+        }
       }
 
       this.initialized = true;
-      this.setInitialTransform();
+      if (this.moveMapOnHighlight) {
+        this.setInitialTransform();
+      }
     },
   },
 };

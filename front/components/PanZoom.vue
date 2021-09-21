@@ -32,8 +32,6 @@ export default {
   height: 100%;
   position: relative;
   overflow: hidden;
-  user-select: none;
-  touch-action: none;
 
   .pan-zoom-content {
     width: 100%;

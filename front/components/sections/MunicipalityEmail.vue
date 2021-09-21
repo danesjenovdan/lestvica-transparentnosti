@@ -37,6 +37,12 @@ export default {
         .sort((a, b) => b.importance - a.importance)
         .slice(0, 5);
     },
+    pageUrl() {
+      if (typeof document !== 'undefined') {
+        return document.location.href;
+      }
+      return '';
+    },
     emailText() {
       const pre = `
 Spoštovani,
@@ -47,7 +53,7 @@ iz rezultatov nedavne raziskave odprtosti in transparentnosti slovenskih občin 
       const post = `
 Odprtost in transparentnost vašega delovanja lahko namreč pomembno prispeva k dvigu participacije občank in občanov. Ta lahko sega od preprostega spremljanja relevantnih tematik in izvajanja nadzora nad delom lokalnih oblasti pa vse do neposredne udeležbe v nekaterih političnih postopkih.
 
-Ker lahko poleg zgornjih petih predlogov rezultat občine izboljšate tudi na druge načine, vam predlagam, da si pogledate celotno analizo, ki jo najdete na: X.
+Ker lahko poleg zgornjih petih predlogov rezultat občine izboljšate tudi na druge načine, vam predlagam, da si pogledate celotno analizo, ki jo najdete na: ${this.pageUrl}.
 
 V upanju, da boste upoštevali predloge in izboljšali pogoje za participacijo ter informiranje občank in občanov, vas lepo pozdravljam.
       `.trim();

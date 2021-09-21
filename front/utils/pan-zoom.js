@@ -43,6 +43,8 @@ export default function panZoom({
   onTransformChange = () => {},
 }) {
   container.style.cursor = 'grab';
+  container.style.userSelect = 'none';
+  container.style.touchAction = 'none';
   let panning = false;
   let zooming = false;
   let start0 = new Point();
@@ -53,8 +55,11 @@ export default function panZoom({
   let lastZoom = 1;
   let scaledSize = 0;
 
+  let disableClick = false;
+  let end0OnMouseDown = new Point();
+
   function setTransform(point, scale) {
-    end0 = point;
+    end0 = new Point(point.x, point.y);
     zoom = scale;
     content.style.transform = `translate(${point.x}px, ${point.y}px) scale(${scale})`;
     onTransformChange({ x: point.x, y: point.y }, scale);
@@ -115,6 +120,10 @@ export default function panZoom({
   }
 
   function mouseMove(e) {
+    const distance = start0.distanceTo(mousePoint(e).subtract(end0OnMouseDown));
+    if (distance >= 4) {
+      disableClick = true;
+    }
     if (panning) {
       end0 = mousePoint(e).subtract(start0);
       setTransform(end0, zoom);
@@ -130,8 +139,10 @@ export default function panZoom({
 
   function mouseDown(e) {
     panning = true;
+    disableClick = false;
     container.style.cursor = 'grabbing';
     start0 = mousePoint(e).subtract(end0);
+    end0OnMouseDown = end0.clone();
     window.addEventListener('mousemove', mouseMove);
     window.addEventListener('mouseup', mouseUp);
     e.preventDefault();
@@ -147,9 +158,19 @@ export default function panZoom({
     e.preventDefault();
   }
 
+  function mouseClick(e) {
+    if (disableClick) {
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+    }
+  }
+
   container.addEventListener('touchstart', touchStart);
   container.addEventListener('mousedown', mouseDown);
   container.addEventListener('wheel', mouseWheel);
+  container.addEventListener('contextmenu', (e) => e.preventDefault());
+  container.addEventListener('click', mouseClick, true);
 
   onReady({
     setTransform,
@@ -157,7 +178,10 @@ export default function panZoom({
       container.removeEventListener('touchstart', touchStart);
       container.removeEventListener('mousedown', mouseDown);
       container.removeEventListener('wheel', mouseWheel);
+      container.removeEventListener('click', mouseClick, true);
       container.style.cursor = '';
+      container.style.userSelect = '';
+      container.style.touchAction = '';
     },
   });
 }

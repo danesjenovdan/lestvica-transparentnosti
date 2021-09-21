@@ -2,6 +2,9 @@
   <content-section id="kako-se-je-odrezala-tvoja-obcina" variant="dark-blue">
     <div class="narrow center">
       <h2>TE ZANIMA, KAKO SE JE ODREZALA <em>TVOJA OBČINA</em>?</h2>
+      <div class="side-image-wrapper">
+        <img src="~/assets/images/ilustracija-obcina.svg" alt="" />
+      </div>
       <div>
         <p>
           V iskalnik vpiši ime svoje občine in preveri, na katerem mestu
@@ -49,6 +52,12 @@ h2 {
   .search-field {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.side-image-wrapper.side-image-wrapper {
+  img {
+    transform: translate(65%, -80%);
   }
 }
 </style>

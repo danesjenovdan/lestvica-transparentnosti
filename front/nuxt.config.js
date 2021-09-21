@@ -1,4 +1,4 @@
-const BASE_PATH = '/les-trans-test/';
+const BASE_PATH = '/lestvica-transparentnosti/';
 const FULL_PATH = `https://danesjenovdan.si${BASE_PATH}`;
 
 const PAGE_TITLE = 'Lestvica transparentnosti';
@@ -103,6 +103,14 @@ export default {
       {
         rel: 'stylesheet',
         href: 'https://use.typekit.net/mdt7xgm.css',
+      },
+    ],
+    script: [
+      {
+        src: 'https://plausible.lb.djnd.si/js/plausible.js',
+        async: true,
+        defer: true,
+        'data-domain': 'danesjenovdan.si',
       },
     ],
   },

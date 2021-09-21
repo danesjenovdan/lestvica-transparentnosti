@@ -31,7 +31,7 @@
               ]"
             >
               <div class="name">{{ peer.rank }}. {{ peer.name }}</div>
-              <div class="score">{{ Math.round(peer.total_score) }} točk</div>
+              <div class="score">{{ formatScore(peer.total_score) }} točk</div>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@
               ]"
             >
               <div class="name">{{ peer.rank }}. {{ peer.name }}</div>
-              <div class="score">{{ Math.round(peer.total_score) }} točk</div>
+              <div class="score">{{ formatScore(peer.total_score) }} točk</div>
             </div>
           </div>
         </div>
@@ -68,6 +68,7 @@
 
 <script>
 import { mapState } from 'vuex';
+import { formatScore } from '~/utils/format';
 import ContentSection from '~/components/sections/ContentSection.vue';
 
 export default {
@@ -86,6 +87,9 @@ export default {
         .slice()
         .sort((a, b) => b.total_score - a.total_score);
     },
+  },
+  methods: {
+    formatScore,
   },
 };
 </script>
