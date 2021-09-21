@@ -92,7 +92,7 @@ class Command(BaseCommand):
             ]
             # remove PB recommendation from municipalities
             # who started doing PB since 2021
-            pp_municipalities = ['Benedikt', 'Divača', 'Izola', 'Jesenice', 'Laško', 'Logatec', 'Lovrenc na Pohorju', 'Maribor', 'Medvode', 'Ptuj', 'Radovljica', 'Ruše', 'Semič', 'Sevnica', 'Škofja Loka']
+            pp_municipalities = ['Benedikt', 'Divača', 'Hrastnik', 'Izola', 'Jesenice', 'Laško', 'Logatec', 'Lovrenc na Pohorju', 'Maribor', 'Medvode', 'Ptuj', 'Radovljica', 'Ruše', 'Semič', 'Sevnica', 'Škofja Loka']
             if municipality.name in pp_municipalities:
                 filtered_simple_recommendations = filter(
                     lambda x: x['question'] != 'Ali občina izvaja participativni proračun?',
