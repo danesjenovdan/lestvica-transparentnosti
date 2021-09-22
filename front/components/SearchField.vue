@@ -25,6 +25,7 @@
 </template>
 
 <script>
+/* globals plausible */
 import { mapState } from 'vuex';
 import Autocomplete from '@trevoreyre/autocomplete-vue';
 
@@ -97,6 +98,12 @@ export default {
       if (!value) {
         return;
       }
+      plausible('Navigated to municipality', {
+        props: {
+          municipalityName: value.name,
+          location: 'header searchbox',
+        },
+      });
       if (this.onSelect) {
         this.onSelect(value);
         return;

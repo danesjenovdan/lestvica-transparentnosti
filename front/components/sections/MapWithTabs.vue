@@ -222,6 +222,7 @@
 </template>
 
 <script>
+/* globals plausible */
 import { mapState } from 'vuex';
 import { GROUP_NAMES } from '~/utils/constants';
 import { formatScore } from '~/utils/format';
@@ -315,10 +316,22 @@ export default {
       return GROUP_NAMES[key]?.name || key;
     },
     onSelectFirst(municipality) {
+      plausible('Selected municipality', {
+        props: {
+          municipalityName: municipality.name,
+          location: 'first map searchbox',
+        },
+      });
       this.disableMapMove = false;
       this.selectedMunicipality1 = municipality;
     },
     onSelectSecond(municipality) {
+      plausible('Selected municipality', {
+        props: {
+          municipalityName: municipality.name,
+          location: 'second map searchbox',
+        },
+      });
       this.disableMapMove = false;
       this.selectedMunicipality2 = municipality;
     },
@@ -369,10 +382,22 @@ export default {
     onMapClick(event) {
       const element = event.target.closest('[data-name]');
       if (element) {
+        plausible('Selected municipality', {
+          props: {
+            municipalityName: element.getAttribute('data-name'),
+            location: 'map click',
+          },
+        });
         this.selectMunicipalityByName(element.getAttribute('data-name'));
       }
     },
     onPeerClick(peer) {
+      plausible('Selected municipality', {
+        props: {
+          municipalityName: peer.name,
+          location: 'peer list click',
+        },
+      });
       this.selectMunicipalityByName(peer.name);
     },
   },
