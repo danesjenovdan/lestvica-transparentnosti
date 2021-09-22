@@ -155,7 +155,9 @@
                     <div class="score-label">
                       {{ groupName(key) }}
                     </div>
-                    <div class="score-value">{{ group.score }} / 20</div>
+                    <div class="score-value">
+                      {{ formatScore(group.score) }} / 20
+                    </div>
                   </div>
                 </div>
               </div>
@@ -248,14 +250,14 @@ export default {
   computed: {
     ...mapState(['municipalitiesList']),
     selectedMunicipalities() {
-      const array = [];
+      const output = [];
       if (this.selectedMunicipality1) {
-        array.push(this.selectedMunicipality1);
+        output.push(this.selectedMunicipality1);
       }
       if (this.selectedMunicipality2) {
-        array.push(this.selectedMunicipality2);
+        output.push(this.selectedMunicipality2);
       }
-      return array;
+      return output;
     },
     getScore() {
       if (this.selectedTab === 0) {
@@ -279,7 +281,7 @@ export default {
       return (this.municipalitiesList || [])
         .map((m) => {
           const score = this.getScore(m);
-          const formattedScore = formatScore(score);
+          const formattedScore = this.formatScore(score);
           return {
             name: m.name,
             score,
@@ -303,6 +305,9 @@ export default {
     },
   },
   methods: {
+    formatScore(score) {
+      return formatScore(score);
+    },
     onPanZoomReady(panZoom) {
       this.panZoom = panZoom;
     },
