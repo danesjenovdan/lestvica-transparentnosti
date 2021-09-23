@@ -98,12 +98,14 @@ export default {
       if (!value) {
         return;
       }
-      plausible('Navigated to municipality', {
-        props: {
-          municipalityName: value.name,
-          location: 'header searchbox',
-        },
-      });
+      try {
+        plausible('Navigated to municipality', {
+          props: {
+            municipalityName: value.name,
+            location: 'header searchbox',
+          },
+        });
+      } catch (error) {}
       if (this.onSelect) {
         this.onSelect(value);
         return;
