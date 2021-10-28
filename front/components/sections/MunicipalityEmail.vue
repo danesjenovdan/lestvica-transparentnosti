@@ -6,7 +6,15 @@
           <h3>POŠLJI SPOROČILO SVOJI OBČINI IN ZAHTEVAJ SPREMEMBE!</h3>
           <h4>
             Kopiraj sporočilo in ga pošlji na:
-            <strong class="email">{{ municipalityData.email }}</strong>
+            <a
+              :href="`mailto:${
+                municipalityData.email
+              }?subject=${encodeURIComponent(
+                `Predlogi za večjo transparentnost občine ${municipalityData.name}`
+              )}&body=${encodeURIComponent(emailText)}`"
+            >
+              <strong class="email">{{ municipalityData.email }}</strong>
+            </a>
           </h4>
         </div>
       </div>

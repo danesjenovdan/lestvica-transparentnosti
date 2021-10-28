@@ -30,7 +30,9 @@
                 <div class="score-label">
                   {{ groupName(key) }}
                 </div>
-                <div class="score-value">{{ group.score }} / 20</div>
+                <div class="score-value">
+                  {{ formatScore(group.score) }} / 20
+                </div>
               </div>
             </div>
             <div class="scores-caption">
@@ -56,6 +58,7 @@
 <script>
 import { mapState } from 'vuex';
 import { GROUP_NAMES } from '~/utils/constants';
+import { formatScore } from '~/utils/format';
 import BackgroundSection from '~/components/sections/BackgroundSection.vue';
 import PanZoom from '~/components/PanZoom.vue';
 import Gauge from '~/components/Gauge.vue';
@@ -77,6 +80,9 @@ export default {
     ...mapState(['municipalityData']),
   },
   methods: {
+    formatScore(score) {
+      return formatScore(score);
+    },
     onPanZoomReady(panZoom) {
       panZoom.disable();
       this.panZoom = panZoom;

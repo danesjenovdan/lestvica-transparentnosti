@@ -7,7 +7,7 @@
           <div>
             <a
               class="donate-button"
-              href="https://danesjenovdan.si/doniraj"
+              href="https://danesjenovdan.si/doniraj/placaj/enkrat/"
               target="_blank"
             >
               <div class="text">DONIRAJ</div>

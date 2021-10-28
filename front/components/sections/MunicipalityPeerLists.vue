@@ -22,17 +22,18 @@
             </p>
           </div>
           <div class="peer-list-elements">
-            <div
+            <nuxt-link
               v-for="peer in populationPeers"
               :key="peer.id"
               :class="[
                 'peer-list-element',
                 { active: municipalityData.id === peer.id },
               ]"
+              :to="`/obcina/${peer.id}/`"
             >
               <div class="name">{{ peer.rank }}. {{ peer.name }}</div>
               <div class="score">{{ formatScore(peer.total_score) }} točk</div>
-            </div>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -48,17 +49,18 @@
             </p>
           </div>
           <div class="peer-list-elements">
-            <div
+            <nuxt-link
               v-for="peer in budgetPeers"
               :key="peer.id"
               :class="[
                 'peer-list-element',
                 { active: municipalityData.id === peer.id },
               ]"
+              :to="`/obcina/${peer.id}/`"
             >
               <div class="name">{{ peer.rank }}. {{ peer.name }}</div>
               <div class="score">{{ formatScore(peer.total_score) }} točk</div>
-            </div>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -165,6 +167,7 @@ export default {
       font-size: 20px;
       display: flex;
       align-items: center;
+      text-decoration: none;
 
       &:not(:last-child) {
         border-bottom: 1px solid #173d58;
