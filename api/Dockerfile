@@ -18,4 +18,4 @@ EXPOSE 8000
 ENV DJANGO_SETTINGS_MODULE=api.settings
 
 # this is the command for dev
-CMD python manage.py runserver 0.0.0.0:8000
+CMD exec python manage.py runserver 0.0.0.0:8000

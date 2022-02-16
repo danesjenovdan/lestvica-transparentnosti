@@ -19,6 +19,7 @@ from django.urls import path, include
 from lestvica import urls
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include(urls)),
+    path("admin/", admin.site.urls),
+    path("", include(urls)),
+    path("__debug__/", include("debug_toolbar.urls")),
 ]
