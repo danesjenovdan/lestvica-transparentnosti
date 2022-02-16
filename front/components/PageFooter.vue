@@ -60,19 +60,25 @@
                     />
                   </svg>
                 </div>
-              </div>
-              <div class="col logo-col">
-                <img
-                  src="~/assets/images/acf.svg"
-                  alt="Active citizens fund"
-                  class="logo"
-                />
+                <div class="nav-link-wrapper">
+                  <a
+                    href="https://danesjenovdan.si/novice/podpora-sklada-active-citizens-fund-v-sloveniji"
+                    target="_blank"
+                    >O projektu Tvoja občina</a
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="16.44 26 64.56 48"
+                  >
+                    <path
+                      d="M53.18 73.82a1.99 1.99 0 002.14-.32l25-22a2 2 0 000-3l-25-22A2 2 0 0052 28v12H26a10.01 10.01 0 000 20h26v12a2 2 0 001.18 1.82zM26 56a6 6 0 010-12h28a2 2 0 002-2v-9.58L75.97 50 56 67.58V58a2 2 0 00-2-2H26z"
+                    />
+                  </svg>
+                </div>
               </div>
               <div class="col credits-col">
                 <div>
-                  Analizo so s finančno podporo
-                  <a href="#" target="_blank">Active citizens fund Slovenija</a>
-                  pripravili
+                  Analizo so pripravili
                   <a
                     href="https://danesjenovdan.si"
                     target="_blank"
@@ -88,6 +94,26 @@
                     okolja</a
                   >.
                 </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </footer>
+    </background-section>
+    <background-section variant="white">
+      <footer>
+        <div class="container">
+          <nav class="footer">
+            <div class="cols">
+              <div class="col logo-col">
+                Projekt je nastal s podporo
+                <a href="https://acfslovenia.si/" target="_blank">
+                  <img
+                    src="~/assets/images/acf.svg"
+                    alt="Active citizens fund"
+                    class="logo"
+                  />
+                </a>
               </div>
             </div>
           </nav>
@@ -201,15 +227,25 @@ footer {
     }
 
     .logo-col {
-      flex: 0 0 auto;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+      }
 
       .logo {
-        display: block;
+        display: inline-block;
         width: auto;
         height: 80px;
+        margin-left: 1.5rem;
 
         @include media-breakpoint-down(md) {
-          margin: 1.5rem auto;
+          // display: block;
+          margin-left: 0;
+          margin-top: 1.5rem;
         }
       }
     }
@@ -218,9 +254,11 @@ footer {
       flex: 1.5;
       font-size: 20px;
       line-height: 1.4;
+      max-width: 500px;
 
       @include media-breakpoint-down(md) {
         font-size: 16px;
+        max-width: initial;
       }
 
       .heavy-link {

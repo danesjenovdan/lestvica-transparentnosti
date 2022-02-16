@@ -6,3 +6,4 @@ boto3
 django-cors-headers
 numpy
 entropy-based-binning
+django-debug-toolbar
