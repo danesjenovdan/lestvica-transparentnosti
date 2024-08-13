@@ -1,5 +1,5 @@
-const BASE_PATH = '/lestvica-transparentnosti/';
-const FULL_PATH = `https://danesjenovdan.si${BASE_PATH}`;
+const BASE_PATH = '/';
+const FULL_PATH = `https://lestvica-transparentnosti.danesjenovdan.si${BASE_PATH}`;
 
 const PAGE_TITLE = 'Lestvica transparentnosti';
 const OG_TITLE = 'Lestvica odprtosti in transparentnosti slovenskih občin';

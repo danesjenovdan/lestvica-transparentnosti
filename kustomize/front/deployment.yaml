@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lestvica-transparentnosti-front
+  labels:
+    app: lestvica-transparentnosti-front
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lestvica-transparentnosti-front
+  template:
+    metadata:
+      labels:
+        app: lestvica-transparentnosti-front
+    spec:
+      containers:
+        - name: lestvica-transparentnosti-front
+          image: lestvica-transparentnosti-front
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: 100Mi
+              cpu: 100m
+            limits:
+              memory: 100Mi
+              cpu: 100m
