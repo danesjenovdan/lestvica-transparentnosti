@@ -2,10 +2,16 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: lestvica-transparentnosti
 resources:
-  - deployment.yaml
-  - service.yaml
-  - ingress.yaml
+  - api/deployment.yaml
+  - api/service.yaml
+  - api/ingress.yaml
+  - front/deployment.yaml
+  - front/service.yaml
+  - front/ingress.yaml
 images:
   - name: lestvica-transparentnosti
     newName: rg.fr-par.scw.cloud/djnd/lestvica-transparentnosti
+    newTag: '78d7d3abb24c25847e225691df3b9d834864298a'
+  - name: lestvica-transparentnosti-front
+    newName: rg.fr-par.scw.cloud/djnd/lestvica-transparentnosti-front
     newTag: '78d7d3abb24c25847e225691df3b9d834864298a'

@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: lestvica-transparentnosti-front
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-production"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - lestvica-transparentnosti.djnd.si
+        - lestvica-transparentnosti.danesjenovdan.si
+      secretName: lestvica-transparentnosti-front-tls
+  rules:
+    - host: lestvica-transparentnosti.djnd.si
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: lestvica-transparentnosti-front
+                port:
+                  number: 80
+    - host: lestvica-transparentnosti.danesjenovdan.si
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: lestvica-transparentnosti-front
+                port:
+                  number: 80
