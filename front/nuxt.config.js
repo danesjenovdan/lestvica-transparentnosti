@@ -107,10 +107,9 @@ export default {
     ],
     script: [
       {
-        src: 'https://plausible.lb.djnd.si/js/plausible.js',
-        async: true,
+        src: 'https://plausible.lb.djnd.si/js/script.js',
         defer: true,
-        'data-domain': 'danesjenovdan.si',
+        'data-domain': 'lestvica-transparentnosti.djnd.si',
       },
     ],
   },
