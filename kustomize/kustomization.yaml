@@ -11,7 +11,7 @@ resources:
 images:
   - name: lestvica-transparentnosti
     newName: rg.fr-par.scw.cloud/djnd/lestvica-transparentnosti
-    newTag: '79976d628e1e61e15f42ed71e1d9767be1f13fd7'
+    newTag: 'db5d8fbe8a00f88549f237f40d09ab55809e2c54'
   - name: lestvica-transparentnosti-front
     newName: rg.fr-par.scw.cloud/djnd/lestvica-transparentnosti-front
-    newTag: '79976d628e1e61e15f42ed71e1d9767be1f13fd7'
+    newTag: 'db5d8fbe8a00f88549f237f40d09ab55809e2c54'
