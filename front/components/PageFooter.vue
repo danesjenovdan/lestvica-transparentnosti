@@ -32,7 +32,7 @@
               <div class="col nav-col">
                 <div class="nav-link-wrapper">
                   <a
-                    href="https://lestvica-transparentnosti.lb.djnd.si/"
+                    href="https://api.lestvica-transparentnosti.djnd.si/"
                     target="_blank"
                     >Celotna zbirka podatkov</a
                   >

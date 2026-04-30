@@ -30,10 +30,10 @@ spec:
                 name: lestvica-transparentnosti-api-secrets
           resources:
             requests:
-              memory: 1Gi
+              memory: 200Mi
               cpu: 200m
             limits:
-              memory: 1Gi
+              memory: 200Mi
               cpu: 200m
         - name: migrate
           image: lestvica-transparentnosti
@@ -49,10 +49,10 @@ spec:
                 name: lestvica-transparentnosti-api-secrets
           resources:
             requests:
-              memory: 1Gi
+              memory: 200Mi
               cpu: 200m
             limits:
-              memory: 1Gi
+              memory: 200Mi
               cpu: 200m
       containers:
         - name: lestvica-transparentnosti
@@ -80,8 +80,8 @@ spec:
               value: api.settings
           resources:
             requests:
-              memory: 1Gi
-              cpu: 500m
+              memory: 200Mi
+              cpu: 200m
             limits:
-              memory: 1Gi
-              cpu: 500m
+              memory: 200Mi
+              cpu: 200m

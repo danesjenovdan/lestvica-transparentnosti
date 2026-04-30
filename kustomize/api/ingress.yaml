@@ -5,13 +5,13 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
   tls:
     - hosts:
-        - lestvica-transparentnosti.lb.djnd.si
+        - api.lestvica-transparentnosti.djnd.si
       secretName: lestvica-transparentnosti-tls
   rules:
-    - host: lestvica-transparentnosti.lb.djnd.si
+    - host: api.lestvica-transparentnosti.djnd.si
       http:
         paths:
           - path: /

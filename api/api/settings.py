@@ -31,7 +31,7 @@ SECRET_KEY = (
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DJANGO_DEBUG", False)
 
-ALLOWED_HOSTS = ["localhost", "lestvica-transparentnosti.lb.djnd.si"]
+ALLOWED_HOSTS = ["localhost", "api.lestvica-transparentnosti.djnd.si"]
 
 
 # Application definition
