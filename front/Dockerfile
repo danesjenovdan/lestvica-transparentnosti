@@ -1,5 +1,5 @@
 # build stage image
-FROM node:16-alpine AS build-stage
+FROM node:26-alpine AS build-stage
 
 WORKDIR /app
 
